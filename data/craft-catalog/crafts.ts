@@ -3,6 +3,11 @@ export type CraftItem = {
   title: string;
 };
 
+// CraftFilterBar expects these exports — kept as empty arrays since PHR
+// doesn't use category/discipline filtering (8-service flat catalog).
+export const CATEGORIES: readonly string[] = [];
+export const DISCIPLINES: readonly string[] = [];
+
 export const crafts: CraftItem[] = [
   { slug: "kitchen-remodeling",     title: "Kitchen Remodeling"     },
   { slug: "bathroom-remodeling",    title: "Bathroom Remodeling"    },
