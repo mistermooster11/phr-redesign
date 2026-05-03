@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <p>
-              Pipe Monkeys (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) operates this website
+              Professional Home Remodeling Inc. (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) operates this website
               and is committed to protecting your privacy. This Privacy Policy explains what information we
               collect, how we use it, and the choices you have regarding your information.
             </p>
@@ -54,12 +54,12 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul>
               <li>Fill out our contact or service request form</li>
-              <li>Call us directly at (718) 749-1830</li>
+              <li>Call us directly at (516) 636-5300</li>
               <li>Send us an email</li>
             </ul>
             <p>
               The types of information we may collect include your name, phone number, email address,
-              service address, and a description of the plumbing issue you need help with.
+              service address, and a description of the home improvement project you need help with.
             </p>
             <p>
               We also automatically collect certain information when you visit our website, including your
@@ -145,9 +145,9 @@ export default function PrivacyPolicyPage() {
               information, please contact us:
             </p>
             <p>
-              <strong>Pipe Monkeys</strong><br />
-              Brooklyn, Queens &amp; Nassau County, NY<br />
-              Phone: <a href="tel:7187491830">(718) 749-1830</a>
+              <strong>Professional Home Remodeling Inc.</strong><br />
+              1184 Hempstead Turnpike, Franklin Square, NY 11010<br />
+              Phone: <a href="tel:5166365300">(516) 636-5300</a>
             </p>
 
           </div>

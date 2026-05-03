@@ -7,46 +7,88 @@ import { useInView } from "framer-motion";
 
 const areas = [
   {
-    slug: "brooklyn",
-    region: "Brooklyn",
-    headline: "Drain & Sewer Specialists in Brooklyn",
-    description:
-      "Brooklyn has some of the oldest plumbing infrastructure in New York — pre-war pipe systems, clay drain lines in brownstones, and cast iron stacks in walk-ups that have been running for 80+ years. Our techs know exactly what to expect when they pull up to a building in Park Slope vs. Bay Ridge, and they arrive with the right equipment the first time.",
-    callouts: [
-      "Brownstone & pre-war walk-up specialists",
-      "Stack drain issues in multi-family buildings",
-      "Same-day service, all neighborhoods",
-    ],
-    neighborhoods:
-      "Williamsburg • Greenpoint • Bushwick • Bed-Stuy • Crown Heights • Park Slope • Sunset Park • Bay Ridge • Bensonhurst • Dyker Heights • Gravesend • Sheepshead Bay • Coney Island • Flatbush • Canarsie • East New York & More",
-  },
-  {
     slug: "queens",
     region: "Queens",
-    headline: "Drain & Sewer Specialists in Queens",
+    headline: "Home Remodeling in Queens",
     description:
-      "Queens covers one of the widest mixes of home types in the entire city — from single-family houses in Whitestone and Bayside to dense apartment buildings in Astoria and Flushing. Our team handles everything from slow kitchen drains in a LIC condo to main line backups in a multi-unit Jackson Heights walk-up.",
+      "Queens has one of the widest mixes of housing types in the city — from single-family homes in Whitestone and Bayside to dense multi-family buildings in Astoria and Flushing. We've been remodeling kitchens, bathrooms, exteriors, and more in Queens homes for over 40 years. Our crews understand how these properties are built and what it takes to deliver quality work in every configuration.",
     callouts: [
-      "Single-family homes to large apartment buildings",
-      "Grease line clearing for restaurants & commercial kitchens",
-      "Emergency same-day response across all of Queens",
+      "Full kitchen and bathroom renovations in all home types",
+      "Roofing, siding, windows, and exterior work throughout the borough",
+      "Licensed under NYC DCA# 2076470 — fully compliant with all city requirements",
     ],
     neighborhoods:
-      "Astoria • LIC • Maspeth • Flushing • Whitestone • Bayside • Forest Hills • Rego Park • Jackson Heights • Elmhurst • Middle Village • Ridgewood • Woodside • Sunnyside • Jamaica • Howard Beach & More",
+      "Arverne • Astoria • Bayside • Bellerose • College Point • Corona • East Elmhurst • Elmhurst • Far Rockaway • Floral Park • Flushing • Forest Hills • Fresh Meadows • Glen Oaks • Hollis • Howard Beach • Jackson Heights • Jamaica • Kew Gardens • Little Neck • Long Island City • Maspeth • Middle Village • Ozone Park • Queens Village • Rego Park • Richmond Hill • Ridgewood • Rockaway Park • Rosedale • Saint Albans • Sunnyside • Whitestone • Woodhaven • Woodside & More",
+  },
+  {
+    slug: "brooklyn",
+    region: "Brooklyn",
+    headline: "Home Remodeling in Brooklyn",
+    description:
+      "Brooklyn's housing stock spans everything from brownstones and pre-war walk-ups to newer attached homes and multi-family buildings. Each presents its own remodeling challenges, and our crews have worked in all of them. Whether you're renovating a Park Slope kitchen, updating a Bay Ridge bathroom, or replacing siding and windows on a two-family in Bensonhurst, we bring the right expertise and materials to the job.",
+    callouts: [
+      "Kitchen and bathroom renovations in brownstones, attached homes, and multi-families",
+      "Exterior work including roofing, siding, and Energy Star window replacement",
+      "Masonry, concrete, and brick pointing services throughout the borough",
+    ],
+    neighborhoods:
+      "Bay Ridge • Bed-Stuy • Bensonhurst • Borough Park • Brighton Beach • Bushwick • Canarsie • Carroll Gardens • Clinton Hill • Cobble Hill • Coney Island • Crown Heights • Ditmas Park • Dyker Heights • East Flatbush • East New York • Flatbush • Flatlands • Fort Greene • Gravesend • Greenpoint • Kensington • Marine Park • Midwood • Park Slope • Prospect Heights • Sheepshead Bay • Sunset Park • Williamsburg • Windsor Terrace & More",
+  },
+  {
+    slug: "bronx",
+    region: "Bronx",
+    headline: "Home Remodeling in the Bronx",
+    description:
+      "From single-family homes in Riverdale to multi-family buildings in Parkchester, we handle the full range of home improvement work throughout the Bronx. Licensed under NYC DCA# 2076470, our crews meet all city requirements and work efficiently in the varied housing types across the borough.",
+    callouts: [
+      "Kitchen and bathroom remodels in all building types",
+      "Roofing, siding, and window replacement for Bronx homeowners",
+      "Masonry, concrete driveways, sidewalks, and brick pointing",
+    ],
+    neighborhoods:
+      "Allerton • Baychester • Bedford Park • Belmont • Castle Hill • City Island • Co-op City • Eastchester • Fordham • Highbridge • Hunts Point • Kingsbridge • Longwood • Marble Hill • Morris Park • Norwood • Parkchester • Pelham Bay • Riverdale • Soundview • Throgs Neck • Tremont & More",
   },
   {
     slug: "nassau-county",
     region: "Nassau County",
-    headline: "Drain & Sewer Specialists in Nassau County",
+    headline: "Home Remodeling in Nassau County",
     description:
-      "Nassau County homes sit on longer sewer runs than most NYC properties, and mature tree root systems along those lines are one of the leading causes of main line backups. Our technicians understand how Nassau systems are laid out, where clogs typically form, and how to clear them without damaging the pipe.",
+      "Based in Franklin Square, Nassau County is where Professional Home Remodeling was built. Our crews have worked in homes from Hewlett to Port Washington, from Garden City to Massapequa. We hold Nassau License #157681 and are deeply familiar with the housing stock across the county — post-war ranches, colonials, split-levels, and larger newer construction. No job requires a long drive; this is our backyard.",
     callouts: [
-      "Root intrusion specialists for Nassau main lines",
-      "Hydro jetting for long sewer runs",
-      "Local techs — not dispatched from far away",
+      "Based in Franklin Square — local crews serving all of Nassau",
+      "Nassau License #157681 — fully licensed for all trade work",
+      "Kitchen, bathroom, roofing, siding, windows, masonry, and emergency repairs",
     ],
     neighborhoods:
-      "Valley Stream • Elmont • Franklin Square • West Hempstead • Hempstead • Garden City • Mineola • New Hyde Park • Floral Park • Rockville Centre • Oceanside • Baldwin • Freeport • Merrick • Bellmore • Wantagh • Seaford • Massapequa • Levittown • East Meadow • Uniondale • Lynbrook • Malverne • Hewlett & More",
+      "Albertson • Atlantic Beach • Baldwin • Bayville • Bellmore • Bethpage • Carle Place • Cedarhurst • East Meadow • East Rockaway • Elmont • Farmingdale • Floral Park • Franklin Square • Freeport • Garden City • Glen Cove • Great Neck • Hempstead • Hewlett • Hicksville • Jericho • Lawrence • Levittown • Long Beach • Lynbrook • Malverne • Manhasset • Massapequa • Merrick • Mineola • New Hyde Park • Oceanside • Old Westbury • Oyster Bay • Plainview • Port Washington • Rockville Centre • Roslyn • Seaford • Syosset • Uniondale • Valley Stream • Wantagh • West Hempstead • Westbury • Woodbury & More",
+  },
+  {
+    slug: "suffolk-county",
+    region: "Suffolk County",
+    headline: "Home Remodeling in Suffolk County",
+    description:
+      "We serve Suffolk County homeowners for roofing, siding, windows, kitchen and bathroom renovations, masonry, and emergency repairs. Suffolk License #HI-61255 keeps us fully compliant across the county. From Amityville to the East End, our crews travel throughout Suffolk for the full range of home improvement work.",
+    callouts: [
+      "Suffolk License #HI-61255 — fully licensed for all residential trade work",
+      "Roofing, siding, windows, kitchens, bathrooms, and masonry throughout the county",
+      "Emergency roof leak and flooding response available",
+    ],
+    neighborhoods:
+      "Amityville • Babylon • Bay Shore • Brentwood • Commack • Copiague • Deer Park • Dix Hills • East Hampton • Hauppauge • Huntington • Islip • Kings Park • Lake Ronkonkoma • Lindenhurst • Melville • Northport • Patchogue • Riverhead • Ronkonkoma • Sayville • Smithtown • Southampton • Stony Brook • West Babylon • West Islip & More",
+  },
+  {
+    slug: "westchester",
+    region: "Westchester County",
+    headline: "Home Remodeling in Westchester County",
+    description:
+      "Licensed in Westchester (WC-32201-H19), we provide the full range of home improvement services to Westchester homeowners — kitchen and bathroom renovations, roofing, siding, windows, masonry, and emergency repairs. Our crews serve communities from Yonkers to Scarsdale and throughout the county.",
+    callouts: [
+      "Westchester License #WC-32201-H19 — fully licensed for all residential work",
+      "Kitchen and bathroom renovations, roofing, siding, and exterior work",
+      "Same crews, same standards as our NYC and Nassau jobs",
+    ],
+    neighborhoods:
+      "Ardsley • Bronxville • Eastchester • Larchmont • Mamaroneck • Mount Vernon • New Rochelle • Pelham • Scarsdale • Tuckahoe • Yonkers & Surrounding Areas",
   },
 ];
 
@@ -82,9 +124,10 @@ function AreaSection({ area, reversed }: { area: typeof areas[number]; reversed:
               <strong>Neighborhoods served:</strong> {area.neighborhoods}
             </p>
             <p>
-              Not sure if we cover your street?{" "}
-              <a href="tel:7187491830" className="ia-link">Call (718) 749-1830</a>{" "}
-              — we almost certainly do.
+              Not sure if we cover your address?{" "}
+              <a href="tel:5166365300" className="ia-link">Call (516) 636-5300</a> (Nassau/Suffolk) or{" "}
+              <a href="tel:7183169221" className="ia-link">(718) 316-9221</a> (NYC &amp; Westchester) —
+              we almost certainly do.
             </p>
           </div>
         </div>
@@ -116,7 +159,7 @@ export default function ServiceAreasPage() {
               <span className="post post-page current-item">Service Areas</span>
             </div>
             <h1 className={`ia-white ia-margin-0 fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
-              We Come to You
+              We Come to You — Across the New York Metro Area
             </h1>
           </div>
         </div>
@@ -127,9 +170,10 @@ export default function ServiceAreasPage() {
               <div className={`sub-heading fadeInUpS wow${heroVis}`}>Coverage Area</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Pipe Monkeys serves all of Brooklyn, Queens, and Nassau County. We don&apos;t
-                  subcontract — our own techs cover every neighborhood, every day, seven days a week.
-                  Same-day scheduling is available across our entire service area.
+                  Professional Home Remodeling serves Queens, Brooklyn, the Bronx, Nassau County,
+                  Suffolk County, and Westchester County. We hold active licenses in all jurisdictions
+                  and have been working in homes across the region for over 40 years. Free estimates
+                  available seven days a week.
                 </p>
               </div>
             </div>
@@ -140,17 +184,17 @@ export default function ServiceAreasPage() {
               </div>
               <ul className="quick-links" role="list">
                 {areas.map((area, i) => (
-                  <li key={area.slug} className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: `${0.1 + i * 0.1}s` }}>
+                  <li key={area.slug} className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: `${0.1 + i * 0.08}s` }}>
                     <a className="ia-link ia-link--arrow" href={`#${area.slug}`}>
                       <i className="icon-link" />
                       <span>{area.region}</span>
                     </a>
                   </li>
                 ))}
-                <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.4s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.6s" }}>
+                  <a className="ia-link ia-link--arrow" href="tel:5166365300">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call (516) 636-5300 — Nassau</span>
                   </a>
                 </li>
               </ul>
@@ -179,14 +223,15 @@ export default function ServiceAreasPage() {
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Our dispatch is fast and our coverage is wide. Call <strong>(718) 749-1830</strong> and
-                we&apos;ll confirm in 30 seconds and get you on the schedule the same day.
+                Nassau &amp; Suffolk: <strong>(516) 636-5300</strong> &mdash;
+                NYC &amp; Westchester: <strong>(718) 316-9221</strong>. We confirm
+                coverage in 30 seconds and can schedule your free estimate the same day.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:5166365300">
+                  Call Nassau: (516) 636-5300
                 </a>
               </div>
             </div>

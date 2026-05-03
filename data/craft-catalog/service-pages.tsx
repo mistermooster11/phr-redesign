@@ -4,67 +4,67 @@ export type ServiceNavItem = { href: string; label: string };
 
 export type ServicePageData = {
   title: string;
-  /** Fallback background color while TODO image is pending */
   bgColor: string;
   navItems: ServiceNavItem[];
-  /** Short intro paragraph shown in CraftOverview left column */
   overviewContent: ReactNode;
-  /** Quick links shown in CraftOverview right column */
   overviewQuickLinks: { label: string; href: string }[];
-  /** Middle content sections rendered between overview and related services */
   sections: { id: string; heading: string; content: ReactNode }[];
-  /** "Related Services" links at page bottom */
   relatedServices: { label: string; href: string }[];
 };
 
 export const servicePages: Record<string, ServicePageData> = {
 
-  /* ─── MAIN SEWER LINES ─────────────────────────────────────────────────── */
-  "main-sewer-lines": {
-    title: "Main Sewer Lines",
+  /* ─── KITCHEN REMODELING ────────────────────────────────────────────────── */
+  "kitchen-remodeling": {
+    title: "Kitchen Remodeling",
     bgColor: "#101d2b",
     navItems: [
       { href: "#overview",          label: "Overview"          },
-      { href: "#when_you_need_it",  label: "When You Need It"  },
+      { href: "#when_you_need_it",  label: "What's Included"   },
       { href: "#our_process",       label: "Our Process"       },
       { href: "#related_services",  label: "Related Services"  },
     ],
     overviewContent: (
       <>
         <p>
-          When the main sewer line backs up, every drain in the building stops
-          working. These blockages — caused by root intrusion, grease and scale
-          buildup, or decades of accumulation — require industrial-grade equipment
-          that goes beyond what a standard snake can handle.
+          We start every kitchen remodel the same way: by asking what you
+          want your kitchen to look like and what&rsquo;s missing from the one
+          you have. From there, we design a plan around your goals —
+          whether that&rsquo;s a full gut renovation or a targeted upgrade —
+          and give you a clear price before any work begins.
         </p>
         <p>
-          Pipe Monkeys techs clear main sewer lines in Brooklyn brownstones, Queens
-          multi-family buildings, and Nassau County homes with long underground
-          runs — every single day.
+          Our kitchens are built to full demolition standard — down to the
+          studs — with new insulation, fresh sheetrock, custom cabinetry,
+          granite or quartz countertops, custom sinks and faucets, tile
+          backsplash, and finish paint. Debris removal is always included.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830"   },
-      { label: "Contact Us Online",   href: "/contact-us"      },
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Main Line Service?",
+        heading: "What&apos;s Included in a Kitchen Remodel",
         content: (
           <>
             <p>
-              Multiple drains backing up at once is the clearest sign your main
-              sewer line is blocked — not just a single fixture. Other warning signs
-              include gurgling sounds from drains, slow flow on every floor of the
-              building, sewage odors, or water backing up in the tub when you flush
-              the toilet.
+              A full kitchen remodel from Professional Home Remodeling includes
+              complete demolition of the existing kitchen down to the studs,
+              re-insulation of exterior walls, installation and taping of new
+              sheetrock, leveling and installation of new flooring, and custom
+              cabinetry — both upper and lower — with crown molding.
             </p>
             <p>
-              These symptoms don&rsquo;t clear on their own. The longer a main line
-              blockage sits, the higher the risk of a sewage backup into the basement
-              or lower-level units. Call us as soon as these signs appear.
+              Finishing details include granite or quartz custom countertops,
+              a new custom sink and faucet, backsplash tile installation between
+              upper and lower cabinetry, and three coats of compound with finish
+              paint. All contractors are responsible for removal of all debris,
+              and we leave your kitchen in brand new condition.
             </p>
           </>
         ),
@@ -75,41 +75,130 @@ export const servicePages: Record<string, ServicePageData> = {
         content: (
           <>
             <p>
-              <strong>Step 1 — Diagnose.</strong> We assess the situation before
-              any tools go in. For main line jobs, we confirm the blockage location
-              and severity and recommend a camera inspection when the cause isn&rsquo;t
-              obvious.
+              <strong>Step 1 — Consultation &amp; Design.</strong> We ask what
+              you want your new kitchen to look like and where you feel your
+              current kitchen falls short. We walk the space and propose a scope
+              that matches your vision and budget.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> You get the price before
-              we start — no surprises. What we quote is what you pay.
+              <strong>Step 2 — Free Written Estimate.</strong> You get a detailed
+              estimate before any commitment. No pressure — take the time you need.
             </p>
             <p>
-              <strong>Step 3 — Clear It.</strong> We use industrial electric cutters
-              and hydro jetting equipment to break through and flush out root masses,
-              grease plugs, and heavy scale. We don&rsquo;t leave until flow is fully
-              restored.
+              <strong>Step 3 — Full Demolition &amp; Build.</strong> We demo down
+              to the studs, address any underlying issues, then rebuild the kitchen
+              from the ground up — all trades managed by our crew.
             </p>
             <p>
-              <strong>Step 4 — Confirm and Clean Up.</strong> We run water through
-              to verify full flow, show you the result, and leave the area cleaner
-              than we found it. Shoe covers and drop cloths on every job.
+              <strong>Step 4 — Final Walkthrough.</strong> We review every finish
+              detail with you before we consider the job complete. Debris is hauled
+              off and the space is left clean.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Camera Inspection",         href: "/craft-catalog/camera-inspection"    },
-      { label: "Hydro Jetting",             href: "/craft-catalog/hydro-jetting"        },
-      { label: "Drain Snaking & Augering",  href: "/craft-catalog/drain-snaking"        },
-      { label: "Multi-Unit Buildings",      href: "/craft-catalog/multi-unit-buildings" },
+      { label: "Bathroom Remodeling",    href: "/craft-catalog/bathroom-remodeling"    },
+      { label: "Masonry & Concrete",     href: "/craft-catalog/masonry"                },
+      { label: "Window Replacement",     href: "/craft-catalog/windows"                },
+      { label: "Emergency Repairs",      href: "/craft-catalog/emergency-repairs"      },
     ],
   },
 
-  /* ─── KITCHEN SINKS ────────────────────────────────────────────────────── */
-  "kitchen-sinks": {
-    title: "Kitchen Sinks",
+  /* ─── BATHROOM REMODELING ───────────────────────────────────────────────── */
+  "bathroom-remodeling": {
+    title: "Bathroom Remodeling",
+    bgColor: "#101d2b",
+    navItems: [
+      { href: "#overview",          label: "Overview"         },
+      { href: "#when_you_need_it",  label: "What's Included"  },
+      { href: "#our_process",       label: "Our Process"      },
+      { href: "#related_services",  label: "Related Services" },
+    ],
+    overviewContent: (
+      <>
+        <p>
+          Our team creates custom bathroom designs tailored to each
+          client&rsquo;s style and functional needs. We start with a complete
+          demolition down to the studs — clean slate every time — and
+          rebuild with quality materials chosen by you.
+        </p>
+        <p>
+          Every bathroom remodel includes new insulation, wonder board in the
+          tub area, green board sheetrock throughout, custom tile on walls and
+          floors, and all-new fixtures: tubs, showers, toilets, vanities,
+          medicine cabinets, and more. Debris removal always included.
+        </p>
+      </>
+    ),
+    overviewQuickLinks: [
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
+    ],
+    sections: [
+      {
+        id: "when_you_need_it",
+        heading: "What's Included in a Bathroom Remodel",
+        content: (
+          <>
+            <p>
+              Full bathroom remodels begin with complete demolition to the
+              studs. We then install new insulation for bathroom walls, wonder
+              board in the tub and shower area, and green board sheetrock
+              throughout the remainder of the bathroom.
+            </p>
+            <p>
+              All walls, ceilings, and floors are renovated to the
+              client&rsquo;s specifications. You choose from a wide selection
+              of custom tile, and our team handles all installation. New
+              fixtures include tubs, showers, toilets, sinks, vanities, and
+              medicine cabinets. All debris is removed and the bathroom is
+              left in brand new condition.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "our_process",
+        heading: "How We Handle It",
+        content: (
+          <>
+            <p>
+              <strong>Step 1 — Design Consultation.</strong> We discuss your
+              vision, walk the space, and help you select tile, fixtures, and
+              finishes that work within your budget.
+            </p>
+            <p>
+              <strong>Step 2 — Free Written Estimate.</strong> Detailed scope
+              and price provided before any work starts.
+            </p>
+            <p>
+              <strong>Step 3 — Demolition &amp; Rebuild.</strong> We demo
+              completely to the studs and rebuild with proper waterproofing,
+              backer board, custom tile, and all-new fixtures.
+            </p>
+            <p>
+              <strong>Step 4 — Final Inspection &amp; Cleanup.</strong> We
+              walk the finished bathroom with you, confirm every detail is
+              correct, and haul all debris off-site before we leave.
+            </p>
+          </>
+        ),
+      },
+    ],
+    relatedServices: [
+      { label: "Kitchen Remodeling",       href: "/craft-catalog/kitchen-remodeling"       },
+      { label: "Masonry & Concrete",       href: "/craft-catalog/masonry"                  },
+      { label: "Basement Waterproofing",   href: "/craft-catalog/basement-waterproofing"   },
+      { label: "Emergency Repairs",        href: "/craft-catalog/emergency-repairs"        },
+    ],
+  },
+
+  /* ─── ROOFING ──────────────────────────────────────────────────────────── */
+  "roofing": {
+    title: "Roofing",
     bgColor: "#101d2b",
     navItems: [
       { href: "#overview",          label: "Overview"         },
@@ -120,39 +209,44 @@ export const servicePages: Record<string, ServicePageData> = {
     overviewContent: (
       <>
         <p>
-          Grease, food debris, and soap scum are the three main kitchen drain
-          killers — and in New York City buildings with heavy daily use, they
-          build up faster than anywhere else. A slow kitchen sink almost always
-          means the problem is already significant inside the pipe.
+          As GAF Certified Installers, we bring manufacturer-backed expertise
+          to every roofing project — from targeted repairs to complete
+          replacements. We work on residential and multi-family properties
+          throughout Queens, Brooklyn, Nassau County, Suffolk County, the
+          Bronx, and Westchester.
         </p>
         <p>
-          Pipe Monkeys clears kitchen drains across Brooklyn, Queens, and Nassau
-          County using professional snakes and hydro jetting, depending on the
-          severity. No mess, no chemical damage to pipes.
+          Free estimates are available seven days a week. If you&rsquo;re
+          dealing with a roof leak or storm damage, call us at{" "}
+          <a href="tel:5166365300">(516) 636-5300</a> for Nassau or{" "}
+          <a href="tel:7183169221">(718) 316-9221</a> for NYC and Westchester.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
-      { label: "Contact Us Online",   href: "/contact-us"    },
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Kitchen Drain Service?",
+        heading: "When Do You Need Roofing Service?",
         content: (
           <>
             <p>
-              A kitchen drain that drains slowly, backs up under the sink, or
-              emits a persistent odor is telling you grease or debris has
-              accumulated in the line. In buildings with garbage disposals, the
-              buildup accelerates — and chemical drain cleaners can actually make
-              the long-term problem worse by softening older pipes.
+              A roof that&rsquo;s more than 10–20 years old is increasingly
+              susceptible to leaks and weather damage. Common signs include
+              missing or curling shingles, water stains on interior ceilings,
+              granules collecting in gutters, and visible daylight through
+              the attic. Storm damage — hail, high winds, fallen debris — can
+              accelerate these issues significantly.
             </p>
             <p>
-              Don&rsquo;t wait until the sink stops draining completely. Early
-              intervention is cheaper, faster, and keeps standing water and odors
-              out of your kitchen.
+              If your roof is leaking, don&rsquo;t wait. Water intrusion causes
+              structural damage that compounds over time. We handle emergency
+              roof leak response and provide written documentation that most
+              insurance carriers accept for claims.
             </p>
           </>
         ),
@@ -163,40 +257,311 @@ export const servicePages: Record<string, ServicePageData> = {
         content: (
           <>
             <p>
-              <strong>Step 1 — Diagnose.</strong> We look at the sink, check
-              under the cabinet, and assess how far the blockage has progressed.
-              We&rsquo;ll tell you whether snaking or jetting is the right call
-              and why.
+              <strong>Step 1 — Free Inspection &amp; Estimate.</strong> We
+              inspect the full roof, document any damage, and provide a
+              written estimate before any work begins.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price is confirmed before
-              any work begins. No bait-and-switch.
+              <strong>Step 2 — Material Selection.</strong> As GAF Certified
+              Installers, we offer manufacturer-backed shingles and roofing
+              materials with warranty coverage.
             </p>
             <p>
-              <strong>Step 3 — Clear It.</strong> For grease buildup, hydro
-              jetting scrubs the pipe walls clean — reducing the chance of a
-              repeat clog. For straightforward blockages, a professional electric
-              snake breaks it up fast and gets the line flowing.
+              <strong>Step 3 — Professional Installation.</strong> Our
+              experienced crew installs or replaces the roofing system to
+              manufacturer specifications, ensuring full weather protection.
             </p>
             <p>
-              <strong>Step 4 — Test and Clean Up.</strong> We run hot water to
-              confirm full drainage and wipe down the work area before we leave.
+              <strong>Step 4 — Cleanup &amp; Final Inspection.</strong>
+              All debris and old materials are hauled off-site. We do a
+              final walkthrough to confirm everything is sealed, flashed,
+              and finished correctly.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"       },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"       },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"    },
-      { label: "Multi-Unit Buildings",     href: "/craft-catalog/multi-unit-buildings"},
+      { label: "Siding",              href: "/craft-catalog/siding"            },
+      { label: "Masonry & Concrete",  href: "/craft-catalog/masonry"           },
+      { label: "Emergency Repairs",   href: "/craft-catalog/emergency-repairs" },
+      { label: "Window Replacement",  href: "/craft-catalog/windows"           },
     ],
   },
 
-  /* ─── TUBS & SHOWERS ───────────────────────────────────────────────────── */
-  "tubs-and-showers": {
-    title: "Tubs & Showers",
+  /* ─── SIDING ───────────────────────────────────────────────────────────── */
+  "siding": {
+    title: "Siding",
+    bgColor: "#101d2b",
+    navItems: [
+      { href: "#overview",          label: "Overview"         },
+      { href: "#when_you_need_it",  label: "What's Included"  },
+      { href: "#our_process",       label: "Our Process"      },
+      { href: "#related_services",  label: "Related Services" },
+    ],
+    overviewContent: (
+      <>
+        <p>
+          We redesign the exterior of your home with insulated vinyl siding
+          in your choice of 20+ colors. Every installation begins with
+          three-quarter inch styrofoam insulation on the exterior walls,
+          followed by insulated vinyl siding — giving you a cleaner look
+          and better energy performance at the same time.
+        </p>
+        <p>
+          Clients receive a lifetime manufacturer&rsquo;s guarantee on their
+          exterior insulated siding. Our crews handle all trim work,
+          aluminum fascia, window and door recaps, caulking, and seamless
+          gutter installation as part of a complete exterior package.
+        </p>
+      </>
+    ),
+    overviewQuickLinks: [
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
+    ],
+    sections: [
+      {
+        id: "when_you_need_it",
+        heading: "What's Included in a Siding Installation",
+        content: (
+          <>
+            <p>
+              Our full siding package covers everything on the exterior:
+              three-quarter inch styrofoam insulation on all walls, installation
+              of insulated vinyl siding, all trim work in a 1/3 vented soffit
+              system, new aluminum fascia, aluminum window and door recaps,
+              caulk and seal on all windows and doors, and a new custom
+              seamless gutter and leader system.
+            </p>
+            <p>
+              Color selection is part of the process — we bring 20+ samples
+              directly to you so you can see them against your home before
+              committing. All work comes with a lifetime manufacturer&rsquo;s
+              guarantee on the siding itself.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "our_process",
+        heading: "How We Handle It",
+        content: (
+          <>
+            <p>
+              <strong>Step 1 — Color &amp; Style Selection.</strong> We bring
+              samples to your home and walk you through options that work with
+              your home&rsquo;s exterior profile and your preferences.
+            </p>
+            <p>
+              <strong>Step 2 — Free Written Estimate.</strong> Full scope and
+              pricing before any commitment.
+            </p>
+            <p>
+              <strong>Step 3 — Prep &amp; Installation.</strong> Exterior walls
+              are prepped with insulation board, followed by siding installation,
+              trim, fascia, window/door recaps, and gutters — all by our crew.
+            </p>
+            <p>
+              <strong>Step 4 — Inspection &amp; Warranty Documentation.</strong>
+              We walk the job with you, confirm all caulking and sealing, and
+              provide your manufacturer warranty documentation.
+            </p>
+          </>
+        ),
+      },
+    ],
+    relatedServices: [
+      { label: "Roofing",            href: "/craft-catalog/roofing"           },
+      { label: "Window Replacement", href: "/craft-catalog/windows"           },
+      { label: "Masonry & Concrete", href: "/craft-catalog/masonry"           },
+      { label: "Emergency Repairs",  href: "/craft-catalog/emergency-repairs" },
+    ],
+  },
+
+  /* ─── WINDOWS ──────────────────────────────────────────────────────────── */
+  "windows": {
+    title: "Window Replacement",
+    bgColor: "#101d2b",
+    navItems: [
+      { href: "#overview",          label: "Overview"         },
+      { href: "#when_you_need_it",  label: "What's Included"  },
+      { href: "#our_process",       label: "Our Process"      },
+      { href: "#related_services",  label: "Related Services" },
+    ],
+    overviewContent: (
+      <>
+        <p>
+          We install Energy Star-rated replacement windows that match the
+          exact dimensions of your existing openings — no structural changes
+          required. Our windows include 7/8-inch insulated glass, U Factor
+          .27 Energy Star ratings, Low E glass, argon gas between the sashes,
+          and solid vinyl welded frames built to last.
+        </p>
+        <p>
+          All installations include custom aluminum window capping and caulk
+          and sealing of all frames. Our contractors remove and cart away all
+          existing windows and debris. Free estimates available seven days a week.
+        </p>
+      </>
+    ),
+    overviewQuickLinks: [
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
+    ],
+    sections: [
+      {
+        id: "when_you_need_it",
+        heading: "What's Included in Window Replacement",
+        content: (
+          <>
+            <p>
+              Each window replacement includes measurement and direct
+              sizing to match your existing opening, followed by removal
+              of the old window. Installed replacements feature 7/8-inch
+              insulated glass, U Factor .27 Energy Star certification, Low
+              E glass, argon gas between the sashes for additional insulation,
+              and screen replacement.
+            </p>
+            <p>
+              Every window is finished with custom aluminum window capping
+              and thorough caulk and sealing of all frames. Old windows and
+              all associated debris are removed and carted away by our crew.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "our_process",
+        heading: "How We Handle It",
+        content: (
+          <>
+            <p>
+              <strong>Step 1 — Measurement &amp; Estimate.</strong> We measure
+              each opening precisely and provide a written estimate for the full
+              installation — material and labor, no hidden fees.
+            </p>
+            <p>
+              <strong>Step 2 — Product Selection.</strong> We walk you through
+              available window styles and finishes that complement your home.
+            </p>
+            <p>
+              <strong>Step 3 — Installation.</strong> Old windows are removed,
+              new Energy Star windows are installed and sealed, and custom
+              aluminum capping is applied on every opening.
+            </p>
+            <p>
+              <strong>Step 4 — Cleanup &amp; Final Check.</strong> All debris
+              is carted away and we confirm every window opens, closes, locks,
+              and seals properly before we leave.
+            </p>
+          </>
+        ),
+      },
+    ],
+    relatedServices: [
+      { label: "Siding",             href: "/craft-catalog/siding"            },
+      { label: "Roofing",            href: "/craft-catalog/roofing"           },
+      { label: "Masonry & Concrete", href: "/craft-catalog/masonry"           },
+      { label: "Emergency Repairs",  href: "/craft-catalog/emergency-repairs" },
+    ],
+  },
+
+  /* ─── MASONRY ──────────────────────────────────────────────────────────── */
+  "masonry": {
+    title: "Masonry & Concrete",
+    bgColor: "#101d2b",
+    navItems: [
+      { href: "#overview",          label: "Overview"         },
+      { href: "#when_you_need_it",  label: "What's Included"  },
+      { href: "#our_process",       label: "Our Process"      },
+      { href: "#related_services",  label: "Related Services" },
+    ],
+    overviewContent: (
+      <>
+        <p>
+          Our masonry team handles driveways, sidewalks, patios, custom
+          brickwork, Cambridge paving stones, stoops, brick walls, exterior
+          brick pointing, and concrete basement waterproofing — all using
+          4,000 PSI concrete, the highest grade available for residential use.
+        </p>
+        <p>
+          We demo and prepare all existing surfaces before installation,
+          provide on-site dumpsters for debris removal, and deliver a
+          finished product built to last through New York winters and
+          heavy foot traffic.
+        </p>
+      </>
+    ),
+    overviewQuickLinks: [
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
+    ],
+    sections: [
+      {
+        id: "when_you_need_it",
+        heading: "Masonry Services We Offer",
+        content: (
+          <>
+            <p>
+              Our masonry work covers a full range of residential projects:
+              concrete cement driveways, walkways, and sidewalks; custom
+              masonry brickwork; Cambridge paving stones with armor-tech
+              finish for walkways, driveways, and patios; new brick and
+              granite stoops; brick walls; exterior masonry brick pointing;
+              and concrete basement waterproofing.
+            </p>
+            <p>
+              All concrete work uses 4,000 PSI mix — the highest quality
+              grade for residential applications — for maximum durability
+              against freeze-thaw cycles and heavy use.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "our_process",
+        heading: "How We Handle It",
+        content: (
+          <>
+            <p>
+              <strong>Step 1 — Site Assessment &amp; Estimate.</strong> We walk
+              the area, evaluate the existing surface or foundation, and provide
+              a detailed written estimate.
+            </p>
+            <p>
+              <strong>Step 2 — Demo &amp; Prep.</strong> Existing driveways,
+              sidewalks, or masonry are demolished and removed. On-site
+              dumpsters handle all debris.
+            </p>
+            <p>
+              <strong>Step 3 — Installation.</strong> New concrete, pavers,
+              brickwork, or masonry is installed to grade and specification,
+              using 4,000 PSI concrete for all structural pours.
+            </p>
+            <p>
+              <strong>Step 4 — Finish &amp; Cure.</strong> We finish surfaces
+              to the agreed specification and advise on curing and care to
+              protect the investment long-term.
+            </p>
+          </>
+        ),
+      },
+    ],
+    relatedServices: [
+      { label: "Roofing",                  href: "/craft-catalog/roofing"                  },
+      { label: "Siding",                   href: "/craft-catalog/siding"                   },
+      { label: "Basement Waterproofing",   href: "/craft-catalog/basement-waterproofing"   },
+      { label: "Emergency Repairs",        href: "/craft-catalog/emergency-repairs"        },
+    ],
+  },
+
+  /* ─── BASEMENT WATERPROOFING ────────────────────────────────────────────── */
+  "basement-waterproofing": {
+    title: "Basement Waterproofing",
     bgColor: "#101d2b",
     navItems: [
       { href: "#overview",          label: "Overview"         },
@@ -207,38 +572,43 @@ export const servicePages: Record<string, ServicePageData> = {
     overviewContent: (
       <>
         <p>
-          Hair, soap residue, and mineral deposits accumulate silently inside tub
-          and shower drains until you&rsquo;re standing in ankle-deep water. The
-          fix is straightforward — but done wrong, it damages tile, p-traps, or
-          the drain body itself.
+          Basement flooding can happen at any time — during heavy rain,
+          rapid snowmelt, or from a sump pump failure — and the damage
+          compounds quickly. We address the root cause: failed drainage
+          systems, compromised foundations, and sewer backup vulnerabilities
+          that let water in.
         </p>
         <p>
-          Pipe Monkeys removes bathroom drain blockages cleanly and carefully, with
-          shoe covers and drop cloths on every job. Your bathroom goes back to normal
-          — or better.
+          Our team provides concrete basement waterproofing and flooding
+          remediation for homeowners across Queens, Brooklyn, Nassau County,
+          Suffolk County, the Bronx, and Westchester. Free estimates available.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
-      { label: "Contact Us Online",   href: "/contact-us"    },
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Tub & Shower Drain Service?",
+        heading: "Common Causes of Basement Flooding",
         content: (
           <>
             <p>
-              Standing water in the tub, a drain that takes minutes to clear after
-              a shower, or a persistent musty smell from the drain are all signs of a
-              buildup that a plunger won&rsquo;t fix. In older NYC buildings, mineral
-              deposits from hard water compound the problem — narrowing pipes gradually
-              until they nearly close off.
+              Basement flooding has many causes — and the right fix depends
+              on identifying the actual source. The most common culprits
+              include excessive rainfall, rapidly melting snow, seepage from
+              groundwater, sump pump failure, a compromised foundation drainage
+              system, weeping tile failure, sewer backup, and lack of
+              foundation maintenance over time.
             </p>
             <p>
-              If you&rsquo;ve already tried drain cleaning solutions without results,
-              the clog is past the point of DIY. Call us.
+              If your basement has flooded before or if you notice damp walls,
+              efflorescence, or musty odors after rain, the problem is already
+              developing. Addressing it now prevents structural damage and mold
+              issues down the line.
             </p>
           </>
         ),
@@ -249,464 +619,134 @@ export const servicePages: Record<string, ServicePageData> = {
         content: (
           <>
             <p>
-              <strong>Step 1 — Diagnose.</strong> We assess the drain type, check the
-              p-trap and trap arm for accessibility, and confirm the blockage is in
-              the drain line — not the main stack.
+              <strong>Step 1 — Assess the Source.</strong> We identify where
+              and how water is entering — wall seepage, floor cracks, sump
+              system failure, or drainage failure at the foundation perimeter.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price confirmed before we
-              touch anything. You approve — then we work.
+              <strong>Step 2 — Written Estimate.</strong> Scope and pricing
+              provided before any work begins.
             </p>
             <p>
-              <strong>Step 3 — Clear It.</strong> We use the right cable gauge for
-              the pipe size — no forcing, no guessing. The blockage comes out cleanly
-              without damaging the drain body or tile surround.
+              <strong>Step 3 — Waterproofing Installation.</strong> We apply
+              concrete waterproofing solutions appropriate to the failure mode —
+              interior drainage systems, exterior grading corrections, concrete
+              coating, or sump pump installation and repair.
             </p>
             <p>
-              <strong>Step 4 — Test and Clean Up.</strong> We run the shower and
-              confirm full drainage before leaving. Shoe covers and drop cloths mean
-              your bathroom floor stays clean throughout.
+              <strong>Step 4 — Final Inspection.</strong> We confirm the
+              solution and advise on maintenance steps to protect the basement
+              going forward.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"    },
-      { label: "Toilets",                  href: "/craft-catalog/toilets"           },
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"     },
-      { label: "Kitchen Sinks",            href: "/craft-catalog/kitchen-sinks"     },
+      { label: "Masonry & Concrete",   href: "/craft-catalog/masonry"              },
+      { label: "Emergency Repairs",    href: "/craft-catalog/emergency-repairs"    },
+      { label: "Bathroom Remodeling",  href: "/craft-catalog/bathroom-remodeling"  },
+      { label: "Kitchen Remodeling",   href: "/craft-catalog/kitchen-remodeling"   },
     ],
   },
 
-  /* ─── TOILETS ──────────────────────────────────────────────────────────── */
-  "toilets": {
-    title: "Toilets",
+  /* ─── EMERGENCY REPAIRS ─────────────────────────────────────────────────── */
+  "emergency-repairs": {
+    title: "Emergency Repairs",
     bgColor: "#101d2b",
     navItems: [
       { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
+      { href: "#when_you_need_it",  label: "When to Call"     },
+      { href: "#our_process",       label: "Our Response"     },
       { href: "#related_services",  label: "Related Services" },
     ],
     overviewContent: (
       <>
         <p>
-          Stubborn toilet clogs — including foreign objects, excessive paper, and
-          blockages too deep for a plunger to reach — require the right auger and
-          the right technique. Forcing the wrong tool causes damage; calling too
-          late turns a simple clog into a sewage backup.
+          We specialize in residential emergency repairs across Queens,
+          Brooklyn, Nassau County, Suffolk County, the Bronx, and
+          Westchester. Our most common emergency calls are roof leaks
+          and basement flooding — two problems that get significantly
+          worse the longer they&rsquo;re ignored.
         </p>
         <p>
-          Pipe Monkeys handles toilet clogs fast, without splash, and without damage
-          to the toilet body or floor. We test the flush before leaving.
+          If you&rsquo;re dealing with a roof leak or flooded basement,
+          call us at{" "}
+          <a href="tel:5166365300">(516) 636-5300</a> (Nassau/Suffolk) or{" "}
+          <a href="tel:7183169221">(718) 316-9221</a> (NYC &amp; Westchester).
+          We respond fast and give you an honest assessment of what needs
+          to be done immediately versus what can wait.
         </p>
       </>
     ),
     overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
-      { label: "Contact Us Online",   href: "/contact-us"    },
+      { label: "Call Nassau: (516) 636-5300",  href: "tel:5166365300" },
+      { label: "Call NYC: (718) 316-9221",     href: "tel:7183169221" },
+      { label: "Contact Us Online",            href: "/contact-us"    },
     ],
     sections: [
       {
         id: "when_you_need_it",
-        heading: "When Do You Need Toilet Clog Service?",
+        heading: "When to Call for Emergency Service",
         content: (
           <>
             <p>
-              If a plunger hasn&rsquo;t resolved the clog after a few attempts, the
-              blockage is past the trap — deeper in the drain line or in an object
-              that can&rsquo;t be pushed through. Common culprits include: children&rsquo;s
-              toys, hygiene products, excessive wipes (even &ldquo;flushable&rdquo; ones),
-              and buildup at the horn of older toilets.
+              <strong>Roof Leaks:</strong> Once a leak is tracked down, we
+              replace damaged shingles or shakes, patch tears in flat roll
+              roofing, or seal joint gaps. If your roof is over 10–20 years
+              old, it may be susceptible to widespread damage even if you
+              only see one visible leak. We check for structural problems as
+              well as the obvious entry point.
             </p>
             <p>
-              A partial clog that flushes slowly is also worth addressing before it
-              becomes a full backup. Call us before the situation escalates.
+              <strong>Basement Flooding:</strong> Flooding can occur during
+              wet or dry weather for a wide range of reasons — excessive rain,
+              snowmelt, groundwater seepage, sump pump failure, or sewer
+              backup. If your basement has water in it right now, call us.
+              We assess the source and address it before the damage grows.
             </p>
           </>
         ),
       },
       {
         id: "our_process",
-        heading: "How We Handle It",
+        heading: "How We Respond",
         content: (
           <>
             <p>
-              <strong>Step 1 — Diagnose.</strong> We determine whether the clog is
-              in the toilet trap, the flange connection, or deeper in the drain line.
-              That determines the right tool.
+              <strong>Step 1 — Rapid Response.</strong> Call us and we
+              respond as fast as conditions allow. Roof leaks and active
+              flooding are treated as urgent situations that warrant
+              immediate attention.
             </p>
             <p>
-              <strong>Step 2 — Quote Upfront.</strong> You get a clear price before
-              any work begins.
+              <strong>Step 2 — Honest Assessment.</strong> We evaluate the
+              full scope — not just the visible damage — and tell you clearly
+              what needs to be done today versus what can be addressed in a
+              scheduled repair.
             </p>
             <p>
-              <strong>Step 3 — Clear It.</strong> We use a professional closet auger
-              to retrieve the object or break up the blockage without scratching the
-              bowl or damaging the internal glaze. We&rsquo;ve cleared everything from
-              toys to full pipe obstructions.
+              <strong>Step 3 — Immediate Repair.</strong> We address the
+              emergency — stopping the active leak, sealing the entry point,
+              or stabilizing the situation — using quality materials that
+              won&rsquo;t fail again quickly.
             </p>
             <p>
-              <strong>Step 4 — Test and Clean Up.</strong> Multiple test flushes
-              confirm the line is clear. We wipe down and leave the bathroom exactly
-              as we found it.
+              <strong>Step 4 — Documentation.</strong> If insurance is
+              involved, we provide written documentation of the damage and
+              the repairs made. We work with homeowners throughout the
+              claims process.
             </p>
           </>
         ),
       },
     ],
     relatedServices: [
-      { label: "Tubs & Showers",           href: "/craft-catalog/tubs-and-showers" },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"    },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines" },
-      { label: "Camera Inspection",        href: "/craft-catalog/camera-inspection"},
+      { label: "Roofing",                  href: "/craft-catalog/roofing"                  },
+      { label: "Basement Waterproofing",   href: "/craft-catalog/basement-waterproofing"   },
+      { label: "Masonry & Concrete",       href: "/craft-catalog/masonry"                  },
+      { label: "Siding",                   href: "/craft-catalog/siding"                   },
     ],
   },
 
-  /* ─── HYDRO JETTING ────────────────────────────────────────────────────── */
-  "hydro-jetting": {
-    title: "Hydro Jetting",
-    bgColor: "#101d2b",
-    navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
-    ],
-    overviewContent: (
-      <>
-        <p>
-          A snake clears a path through a clog. Hydro jetting actually scrubs the
-          interior pipe walls — using high-pressure water to blast away grease, scale,
-          mineral deposits, and root fragments from the inside out.
-        </p>
-        <p>
-          If the same drain has backed up multiple times in the past year, jetting is
-          the long-term fix. Pipe Monkeys offers hydro jetting for kitchen lines, main
-          sewer lines, and commercial buildings throughout Brooklyn, Queens, and Nassau
-          County.
-        </p>
-      </>
-    ),
-    overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
-      { label: "Contact Us Online",   href: "/contact-us"    },
-    ],
-    sections: [
-      {
-        id: "when_you_need_it",
-        heading: "When Is Hydro Jetting the Right Call?",
-        content: (
-          <>
-            <p>
-              Hydro jetting is the right call when: a drain has recurring clogs despite
-              regular snaking; there is confirmed grease buildup in a restaurant or
-              commercial kitchen line; a camera inspection reveals significant scale or
-              root intrusion that a cutter alone won&rsquo;t fully resolve; or a
-              landlord wants a clean baseline before a new tenant moves in.
-            </p>
-            <p>
-              Jetting is not the right first tool for every job — we&rsquo;ll always
-              recommend it when it&rsquo;s warranted, and only when it&rsquo;s warranted.
-            </p>
-          </>
-        ),
-      },
-      {
-        id: "our_process",
-        heading: "How We Handle It",
-        content: (
-          <>
-            <p>
-              <strong>Step 1 — Camera First (Recommended).</strong> For main line
-              jetting, we run a camera to confirm the pipe is structurally sound before
-              introducing high pressure. Jetting a cracked or collapsed pipe makes the
-              problem worse.
-            </p>
-            <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price confirmed before we start.
-            </p>
-            <p>
-              <strong>Step 3 — Jet It.</strong> We feed the jetting hose into the
-              clean-out or access point and work the nozzle through the line at up to
-              4,000 PSI — forward and backward — until the walls are clean and flow
-              is fully restored.
-            </p>
-            <p>
-              <strong>Step 4 — Confirm.</strong> We run water to verify full flow
-              and, on main line jobs, can run a post-jet camera to show you the results.
-            </p>
-          </>
-        ),
-      },
-    ],
-    relatedServices: [
-      { label: "Camera Inspection",        href: "/craft-catalog/camera-inspection"   },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"    },
-      { label: "Kitchen Sinks",            href: "/craft-catalog/kitchen-sinks"       },
-      { label: "Multi-Unit Buildings",     href: "/craft-catalog/multi-unit-buildings"},
-    ],
-  },
-
-  /* ─── DRAIN SNAKING & AUGERING ─────────────────────────────────────────── */
-  "drain-snaking": {
-    title: "Drain Snaking & Augering",
-    bgColor: "#101d2b",
-    navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
-    ],
-    overviewContent: (
-      <>
-        <p>
-          Drain snaking is the first-line tool for most residential clogs. Our
-          professional-grade electric snakes reach further, spin harder, and break
-          through blockages that hand snakes and drugstore augers can&rsquo;t touch.
-        </p>
-        <p>
-          Pipe Monkeys carries multiple cable sizes — from small bathroom drain cables
-          to full main-line cables — so the right tool is always on the truck when we
-          arrive.
-        </p>
-      </>
-    ),
-    overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
-      { label: "Contact Us Online",   href: "/contact-us"    },
-    ],
-    sections: [
-      {
-        id: "when_you_need_it",
-        heading: "When Do You Need Drain Snaking?",
-        content: (
-          <>
-            <p>
-              Snaking is the right call for most single-drain clogs — kitchen sinks,
-              bathroom sinks, tubs, showers, and toilets where the blockage is localized.
-              It&rsquo;s also the first step for main line jobs before deciding whether
-              hydro jetting is needed.
-            </p>
-            <p>
-              If you&rsquo;ve tried a plunger or a hand snake without results, the
-              clog is past what consumer tools can reach. A professional cable gets
-              into the line, breaks up or retrieves the obstruction, and leaves the
-              drain fully open.
-            </p>
-          </>
-        ),
-      },
-      {
-        id: "our_process",
-        heading: "How We Handle It",
-        content: (
-          <>
-            <p>
-              <strong>Step 1 — Select the Right Tool.</strong> Cable diameter matters.
-              We match the cable to the pipe size — forcing an oversized cable causes
-              damage; undersizing leaves the clog intact.
-            </p>
-            <p>
-              <strong>Step 2 — Quote Upfront.</strong> You know the price before work
-              begins.
-            </p>
-            <p>
-              <strong>Step 3 — Snake It.</strong> We feed the cable through the access
-              point (drain opening, clean-out, or trap access) and work through the
-              blockage until the line clears. If the cable hits something it can&rsquo;t
-              resolve, we&rsquo;ll tell you immediately — no pushing blind.
-            </p>
-            <p>
-              <strong>Step 4 — Test and Clean Up.</strong> Water runs to confirm full
-              drainage. Cable, debris, and equipment cleaned up before we leave.
-            </p>
-          </>
-        ),
-      },
-    ],
-    relatedServices: [
-      { label: "Hydro Jetting",        href: "/craft-catalog/hydro-jetting"     },
-      { label: "Main Sewer Lines",     href: "/craft-catalog/main-sewer-lines"  },
-      { label: "Kitchen Sinks",        href: "/craft-catalog/kitchen-sinks"     },
-      { label: "Tubs & Showers",       href: "/craft-catalog/tubs-and-showers"  },
-    ],
-  },
-
-  /* ─── CAMERA INSPECTION ────────────────────────────────────────────────── */
-  "camera-inspection": {
-    title: "Camera Inspection",
-    bgColor: "#101d2b",
-    navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
-    ],
-    overviewContent: (
-      <>
-        <p>
-          Before recommending a major repair, jetting service, or repeated snaking,
-          Pipe Monkeys can run a camera through your main line and show you exactly
-          what&rsquo;s in there — in real time. You see what we see: root intrusion,
-          grease buildup, pipe damage, or collapsed sections.
-        </p>
-        <p>
-          No guesswork. No upsells on work you don&rsquo;t need.
-        </p>
-      </>
-    ),
-    overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
-      { label: "Contact Us Online",   href: "/contact-us"    },
-    ],
-    sections: [
-      {
-        id: "when_you_need_it",
-        heading: "When Do You Need a Camera Inspection?",
-        content: (
-          <>
-            <p>
-              Camera inspection is the right call when: a main line blockage keeps
-              coming back after repeated snaking; you&rsquo;re buying or selling a
-              home and want to know the condition of the sewer line; a plumber or
-              contractor recommends an expensive repair and you want independent
-              verification; or we recommend hydro jetting and want to confirm the
-              pipe is structurally sound first.
-            </p>
-            <p>
-              It&rsquo;s also useful after a major clearing job — we can show you the
-              before-and-after results so you know the line is actually clean, not
-              just partially cleared.
-            </p>
-          </>
-        ),
-      },
-      {
-        id: "our_process",
-        heading: "How We Handle It",
-        content: (
-          <>
-            <p>
-              <strong>Step 1 — Access the Line.</strong> We locate the clean-out or
-              access point nearest to the problem area. In buildings without a clean-out,
-              we&rsquo;ll advise on the best access option.
-            </p>
-            <p>
-              <strong>Step 2 — Quote Upfront.</strong> Price confirmed before the
-              camera goes in.
-            </p>
-            <p>
-              <strong>Step 3 — Run the Camera.</strong> We feed a high-resolution
-              camera through the line and walk you through what we see — root masses,
-              grease, cracks, offsets, or clear pipe. You&rsquo;re watching the screen
-              in real time.
-            </p>
-            <p>
-              <strong>Step 4 — Report and Recommend.</strong> We tell you what we found
-              and what, if anything, needs to be done — with the footage to back it up.
-              You decide how to proceed. No pressure.
-            </p>
-          </>
-        ),
-      },
-    ],
-    relatedServices: [
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"       },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"    },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"       },
-      { label: "Multi-Unit Buildings",     href: "/craft-catalog/multi-unit-buildings"},
-    ],
-  },
-
-  /* ─── MULTI-UNIT & COMMERCIAL BUILDINGS ────────────────────────────────── */
-  "multi-unit-buildings": {
-    title: "Multi-Unit & Commercial Buildings",
-    bgColor: "#101d2b",
-    navItems: [
-      { href: "#overview",          label: "Overview"         },
-      { href: "#when_you_need_it",  label: "When You Need It" },
-      { href: "#our_process",       label: "Our Process"      },
-      { href: "#related_services",  label: "Related Services" },
-    ],
-    overviewContent: (
-      <>
-        <p>
-          Pipe Monkeys works with brownstones, pre-war walk-ups, condos, co-ops,
-          and multi-family buildings across Brooklyn and Queens every day. Stack
-          drain issues, shared main lines, and building-wide backups are all in
-          our wheelhouse — and we know how to coordinate the job without creating
-          chaos for tenants.
-        </p>
-        <p>
-          Building managers and landlords: we show up on time, work efficiently,
-          and document the work. Call us directly at{" "}
-          <a href="tel:7187491830">(718) 749-1830</a>.
-        </p>
-      </>
-    ),
-    overviewQuickLinks: [
-      { label: "Call (718) 749-1830", href: "tel:7187491830" },
-      { label: "Contact Us Online",   href: "/contact-us"    },
-    ],
-    sections: [
-      {
-        id: "when_you_need_it",
-        heading: "When Do You Need Multi-Unit Drain Service?",
-        content: (
-          <>
-            <p>
-              A building-wide backup — multiple units complaining of slow drains or
-              sewage odors simultaneously — almost always points to the main building
-              drain or the stack serving multiple floors. Individual unit clogs are
-              more straightforward; building-wide problems require more diagnostic
-              work to pinpoint whether the issue is in a branch line, the main stack,
-              or the building sewer itself.
-            </p>
-            <p>
-              We handle both. Whether it&rsquo;s a single-apartment drain or a main
-              line serving a six-unit brownstone, we bring the right equipment and
-              take the time to find the actual source of the problem.
-            </p>
-          </>
-        ),
-      },
-      {
-        id: "our_process",
-        heading: "How We Handle It",
-        content: (
-          <>
-            <p>
-              <strong>Step 1 — Coordinate with Management.</strong> We work directly
-              with the building manager or owner to understand which units are affected
-              and minimize disruption. If access to multiple units is needed, we schedule
-              efficiently.
-            </p>
-            <p>
-              <strong>Step 2 — Diagnose the Root Cause.</strong> Building-wide symptoms
-              need root-cause diagnosis — we don&rsquo;t just snake the nearest drain.
-              Camera inspection is often recommended to locate the exact blockage in
-              the stack or main building drain.
-            </p>
-            <p>
-              <strong>Step 3 — Quote Upfront.</strong> Clear price before we start.
-              For complex jobs, we scope the work and confirm before proceeding.
-            </p>
-            <p>
-              <strong>Step 4 — Clear and Confirm.</strong> We use the right tool for
-              the blockage type — snake, industrial cutter, or hydro jet — confirm full
-              flow on all affected units, and document the work completed.
-            </p>
-          </>
-        ),
-      },
-    ],
-    relatedServices: [
-      { label: "Camera Inspection",        href: "/craft-catalog/camera-inspection" },
-      { label: "Hydro Jetting",            href: "/craft-catalog/hydro-jetting"     },
-      { label: "Main Sewer Lines",         href: "/craft-catalog/main-sewer-lines"  },
-      { label: "Drain Snaking & Augering", href: "/craft-catalog/drain-snaking"     },
-    ],
-  },
 };

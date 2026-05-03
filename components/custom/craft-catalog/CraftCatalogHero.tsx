@@ -29,7 +29,7 @@ export default function CraftCatalogHero() {
                 style={{ animationDelay: "0.2s" }}
               >
                 <p>
-                  From backed-up kitchen sinks to full main sewer line clogs, Pipe Monkeys
+                  From kitchen remodels and bathroom renovations to roofing, siding, and masonry, Professional Home Remodeling
                   handles every drain problem in Brooklyn, Queens, and Nassau County. We use
                   pro-grade equipment, give you upfront pricing, and don&apos;t leave until
                   the job is done right.

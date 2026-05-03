@@ -12,8 +12,8 @@ const quickLinks = [
 ];
 
 const socials = [
-  { icon: "icon-facebook",   href: "https://www.facebook.com/pipemonkeys",  label: "Facebook"  },
-  { icon: "icon-instagram",  href: "https://www.instagram.com/pipemonkeys", label: "Instagram" },
+  { icon: "icon-facebook", href: "https://www.facebook.com/phr.ny", label: "Facebook" },
+  // [TODO: Add Instagram URL if Professional Home Remodeling has an Instagram account]
 ];
 
 export default function Footer() {
@@ -30,11 +30,11 @@ export default function Footer() {
         {/* Logo */}
         <div className={`footer__logo fadeInUpS wow${vis}`}>
           <a href="/">
-            <span className="sr-only">Pipe Monkeys</span>
-            {/* [TODO: Replace with Pipe Monkeys logo] */}
+            <span className="sr-only">Professional Home Remodeling Inc.</span>
+            {/* [TODO: Replace with Professional Home Remodeling logo] */}
             <img
               src="/logos/logo-long.svg"
-              alt="Pipe Monkeys Drain & Sewer"
+              alt="Professional Home Remodeling Inc."
               width="220"
               height="48"
             />
@@ -66,18 +66,18 @@ export default function Footer() {
             <h3 className="footer__heading">Contact Us</h3>
             <div className="content-entry">
               <p>
-                <strong>(718) 749-1830</strong><br />
-                Brooklyn, Queens &amp; Nassau County<br />
-                {/* [TODO: Add business hours] */}
-                Mon–Sat: 7am–8pm &bull; Sun: Emergency Only
+                <strong>(516) 636-5300</strong> Nassau &bull; Suffolk<br />
+                <strong>(718) 316-9221</strong> NYC &amp; Westchester<br />
+                1184 Hempstead Turnpike, Franklin Square, NY 11010<br />
+                Mon–Fri: 8am–6:30pm &bull; Sat: 8am–3pm &bull; Sun: By Appt.
               </p>
             </div>
             <a
-              href="tel:7187491830"
+              href="tel:5166365300"
               className={`ia-link ia-link--arrow ia-link--white wow${vis}`}
             >
               <i className="icon-arrow-right ia-orange" />
-              <span>Call Now</span>
+              <span>Call Nassau: (516) 636-5300</span>
             </a>
           </div>
 
@@ -89,9 +89,9 @@ export default function Footer() {
             <h3 className="footer__heading">Service Areas</h3>
             <div className="content-entry">
               <p>
-                Brooklyn &bull; Queens &bull; Nassau County<br />
-                All neighborhoods — if you&apos;re not sure,
-                just call. We almost certainly cover your area.
+                Queens &bull; Brooklyn &bull; Bronx<br />
+                Nassau County &bull; Suffolk County<br />
+                Westchester County
               </p>
             </div>
             <a
@@ -111,7 +111,7 @@ export default function Footer() {
         <div className={`footer__bottom cleared fadeInUpS wow${vis}`}>
 
           <div className="footer__bottom__left">
-            &copy;2026 Pipe Monkeys. All rights reserved.
+            &copy;2026 Professional Home Remodeling Inc. All rights reserved.
           </div>
 
           <div className="footer__bottom__center">

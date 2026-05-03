@@ -8,43 +8,43 @@ import { useInView } from "framer-motion";
 const galleryItems = [
   {
     id: "gallery-1",
-    label: "Main Sewer Line — Crown Heights, Brooklyn",
-    beforeAlt: "Blocked main sewer line before clearing",
-    afterAlt:  "Clear main sewer line after hydro jetting",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
+    label: "Kitchen Remodel — Nassau County",
+    beforeAlt: "Kitchen before renovation",
+    afterAlt:  "Fully renovated kitchen with custom cabinetry and granite countertops",
+    // [TODO: Replace with real PHR kitchen before/after photos]
     before: "/images/IMG_9688-1024x682.jpg",
     after:  "/images/IMG_9750-1024x683.jpg",
-    category: "Main Sewer Line",
+    category: "Kitchen",
   },
   {
     id: "gallery-2",
-    label: "Kitchen Drain — Astoria, Queens",
-    beforeAlt: "Grease-clogged kitchen drain before clearing",
-    afterAlt:  "Kitchen drain fully cleared and flowing",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/iStock-530983109-1.jpg",
+    label: "Bathroom Remodel — Queens",
+    beforeAlt: "Bathroom before renovation",
+    afterAlt:  "Renovated bathroom with custom tile and new fixtures",
+    // [TODO: Replace with real PHR bathroom before/after photos]
+    before: "/images/IMG_9750-1024x683.jpg",
     after:  "/images/IMG_9688-1024x682.jpg",
-    category: "Kitchen Sink",
+    category: "Bathroom",
   },
   {
     id: "gallery-3",
-    label: "Hydro Jetting — Nassau County Home",
-    beforeAlt: "Pipe interior with grease buildup",
-    afterAlt:  "Clean pipe interior after hydro jetting",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
-    before: "/images/IMG_9750-1024x683.jpg",
-    after:  "/images/iStock-530983109-1.jpg",
-    category: "Hydro Jetting",
+    label: "Siding & Windows — Brooklyn",
+    beforeAlt: "Home exterior before siding and window replacement",
+    afterAlt:  "Home exterior after insulated vinyl siding and Energy Star window installation",
+    // [TODO: Replace with real PHR siding/windows before/after photos]
+    before: "/images/iStock-530983109-1.jpg",
+    after:  "/images/IMG_9688-1024x682.jpg",
+    category: "Siding & Windows",
   },
   {
     id: "gallery-4",
-    label: "Tub Drain — Bay Ridge, Brooklyn",
-    beforeAlt: "Hair-clogged tub drain before clearing",
-    afterAlt:  "Tub drain cleared with no damage to tile",
-    // [TODO: Replace with real before/after job photos from Pipe Monkeys]
+    label: "Masonry — Nassau County",
+    beforeAlt: "Driveway and walkway before masonry work",
+    afterAlt:  "New Cambridge paving stone driveway and walkway",
+    // [TODO: Replace with real PHR masonry before/after photos]
     before: "/images/IMG_9688-1024x682.jpg",
-    after:  "/images/IMG_9750-1024x683.jpg",
-    category: "Tub & Shower",
+    after:  "/images/iStock-530983109-1.jpg",
+    category: "Masonry",
   },
 ];
 
@@ -68,7 +68,6 @@ function GalleryCard({ item, delay }: { item: typeof galleryItems[number]; delay
         padding: "2rem",
       }}
     >
-      {/* Category badge */}
       <span
         style={{
           display: "inline-block",
@@ -84,7 +83,6 @@ function GalleryCard({ item, delay }: { item: typeof galleryItems[number]; delay
         {item.category}
       </span>
 
-      {/* Before / After image pair — large, equal height */}
       <div
         style={{
           display: "grid",
@@ -98,7 +96,6 @@ function GalleryCard({ item, delay }: { item: typeof galleryItems[number]; delay
             style={{
               background: `url(${item.before}) no-repeat 50% 50% / cover`,
               backgroundColor: "#1a2a3a",
-              /* tall on desktop, still readable on mobile */
               aspectRatio: "4 / 3",
               borderRadius: "4px",
               width: "100%",
@@ -165,9 +162,10 @@ export default function GalleryPage() {
               <div className={`sub-heading fadeInUpS wow${heroVis}`}>Real Results</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Every job below was done by a Pipe Monkeys tech in Brooklyn, Queens, or Nassau
-                  County. These are real lines, real homes, and real results — no stock photos.
-                  {/* [TODO: Replace placeholder images with actual job photos from client] */}
+                  Every project below was completed by Professional Home Remodeling
+                  across Queens, Brooklyn, Nassau County, and the surrounding area.
+                  These are real homes and real results — not stock photos.
+                  {/* [TODO: Replace placeholder images with actual PHR project photos] */}
                 </p>
               </div>
             </div>
@@ -178,9 +176,9 @@ export default function GalleryPage() {
               </div>
               <ul className="quick-links" role="list">
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                  <a className="ia-link ia-link--arrow" href="tel:5166365300">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call Nassau: (516) 636-5300</span>
                   </a>
                 </li>
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.2s" }}>
@@ -192,7 +190,7 @@ export default function GalleryPage() {
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.3s" }}>
                   <a className="ia-link ia-link--arrow" href="/contact-us">
                     <i className="icon-link" />
-                    <span>Schedule Service</span>
+                    <span>Get a Free Estimate</span>
                   </a>
                 </li>
               </ul>
@@ -211,15 +209,16 @@ export default function GalleryPage() {
             className={`h3 fadeInUpS wow${gridInView ? " is-visible" : ""}`}
             style={{ animationDelay: "0.1s" }}
           >
-            Recent Jobs
+            Recent Projects
           </h2>
           <div
             className={`content-entry fadeInUpS wow${gridInView ? " is-visible" : ""}`}
             style={{ animationDelay: "0.2s" }}
           >
             <p>
-              Scroll through clogs we&apos;ve cleared across the area. From grease-packed kitchen
-              lines to root-choked main sewers — we document our work and stand behind every job.
+              A selection of completed projects across Queens, Brooklyn, Nassau County,
+              and beyond — kitchens, bathrooms, exteriors, and masonry. Every job is
+              managed directly by the owner and built to last.
             </p>
           </div>
           <div
@@ -249,22 +248,23 @@ export default function GalleryPage() {
       >
         <div className="inner inner--slim-1172">
           <div className={`sub-heading wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.1s" }}>
-            Ready to Clear Your Drain?
+            Ready to Start Your Project?
           </div>
           <h2 className={`h2 wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
-            Same-Day Service Available
+            Free Estimates — No Obligation
           </h2>
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Call <strong>(718) 749-1830</strong> — we&apos;ll give you an honest price
-                before we start, and we won&apos;t leave until the job is done right.
+                Call <strong>(516) 636-5300</strong> (Nassau/Suffolk) or{" "}
+                <strong>(718) 316-9221</strong> (NYC &amp; Westchester) — we&apos;ll
+                give you a straight answer on scope and cost, and there&apos;s no pressure.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:5166365300">
+                  Call Nassau: (516) 636-5300
                 </a>
               </div>
             </div>

@@ -51,11 +51,11 @@ export default function Insights() {
           {/* HEAD */}
           <div className="front-insights__head py-0 md:py-50">
             <div className="sub-heading sub-heading__white">What We Do</div>
-            <h2 className="h3 ia-white">Our Most Common Services</h2>
+            <h2 className="h3 ia-white">Our Core Services</h2>
             <div className="content-entry ia-white max-w-2xl">
               <p className="ia-white">
-                From a single backed-up sink to a full main line blockage, select a service below
-                to see how we handle it — and what you can expect from start to finish.
+                Select a service below to see exactly what&#39;s included, when you need it,
+                and how our team handles it from first call to final walkthrough.
               </p>
             </div>
           </div>

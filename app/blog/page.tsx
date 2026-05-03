@@ -7,58 +7,58 @@ import { useInView } from "framer-motion";
 
 const posts = [
   {
-    id: "why-drains-keep-clogging",
-    title: "Why Your Drain Keeps Clogging (And What Actually Fixes It)",
+    id: "kitchen-remodel-cost-nassau",
+    title: "What Does a Kitchen Remodel Actually Cost in Nassau County? (2026 Guide)",
     excerpt:
-      "Snaking the same drain every few months? The problem usually isn't the clog — it's grease or mineral buildup on the pipe walls. Here's when to snake and when to jet.",
-    category: "Drain Tips",
-    date: "April 2026",
-    href: "/blog/why-drains-keep-clogging",
-  },
-  {
-    id: "hydro-jetting-vs-snaking",
-    title: "Hydro Jetting vs. Drain Snaking: Which One Do You Actually Need?",
-    excerpt:
-      "Both tools clear clogs — but they work very differently. We break down the honest answer for homeowners who don't want to overpay or get upsold.",
-    category: "How It Works",
-    date: "March 2026",
-    href: "/blog/hydro-jetting-vs-snaking",
-  },
-  {
-    id: "main-line-warning-signs",
-    title: "5 Warning Signs Your Main Sewer Line Is About to Back Up",
-    excerpt:
-      "Multiple slow drains, gurgling toilets, foul smells near floor drains — these aren't random. They're your plumbing system telling you something's wrong downstream.",
+      "Cabinets, countertops, flooring, labor — we break down what drives kitchen renovation costs for Long Island homeowners and what to watch out for when getting estimates.",
     category: "Homeowner Guide",
+    date: "April 2026",
+    href: "/blog/kitchen-remodel-cost-nassau",
+  },
+  {
+    id: "signs-roof-needs-replacement",
+    title: "5 Signs Your Roof Needs to Be Replaced — Not Just Repaired",
+    excerpt:
+      "Curling shingles, granules in the gutters, interior water stains, age past 20 years. Our team shares the honest indicators that a repair won't hold long-term.",
+    category: "Roofing",
+    date: "March 2026",
+    href: "/blog/signs-roof-needs-replacement",
+  },
+  {
+    id: "siding-insulation-energy-savings",
+    title: "Insulated Siding: Does It Actually Lower Your Energy Bills?",
+    excerpt:
+      "Foam-backed vinyl siding can reduce heat loss through walls by up to 20%. We explain how insulated siding works, what to expect, and why the manufacturer guarantee matters.",
+    category: "Siding",
     date: "February 2026",
-    href: "/blog/main-line-warning-signs",
+    href: "/blog/siding-insulation-energy-savings",
   },
   {
-    id: "brooklyn-old-pipes",
-    title: "Brooklyn's Old Pipes: What Every Brownstone Owner Needs to Know",
+    id: "bathroom-tile-guide-ny",
+    title: "Choosing Bathroom Tile for New York Homes: A Practical Guide",
     excerpt:
-      "Pre-war buildings in Brooklyn often have clay, cast iron, or even Orangeburg pipe. We explain what that means for your drains and how to stay ahead of blockages.",
-    category: "Local Guide",
+      "Porcelain vs. ceramic, large-format vs. mosaic, wall vs. floor — our remodeling team shares what holds up best in NYC and Long Island homes over the long term.",
+    category: "Bathrooms",
     date: "January 2026",
-    href: "/blog/brooklyn-old-pipes",
+    href: "/blog/bathroom-tile-guide-ny",
   },
   {
-    id: "what-not-to-flush",
-    title: "What Not to Flush or Pour Down the Drain (The Real List)",
+    id: "basement-flooding-causes",
+    title: "Why Does My Basement Flood? The 6 Most Common Causes in NY Homes",
     excerpt:
-      "Flushable wipes aren't actually flushable. Grease hardens in your pipes. Here's what Pipe Monkeys techs pull out of clogged lines every single day.",
-    category: "Drain Tips",
+      "Sump pump failure, weeping tile failure, drainage issues, foundation compromise — most basement flooding has a fixable root cause. Here's how to identify yours.",
+    category: "Basement & Waterproofing",
     date: "December 2025",
-    href: "/blog/what-not-to-flush",
+    href: "/blog/basement-flooding-causes",
   },
   {
-    id: "camera-inspection-worth-it",
-    title: "Is a Drain Camera Inspection Worth It? Honest Answer from a Tech",
+    id: "energy-star-windows-worth-it",
+    title: "Are Energy Star Windows Worth the Investment? An Honest Answer",
     excerpt:
-      "You don't need a camera for a simple kitchen clog. But for recurring main line issues? A camera can save you thousands. Here's when we recommend it and why.",
-    category: "How It Works",
+      "The U Factor .27 rating, Low E glass, and argon gas fills in modern replacement windows make a measurable difference in drafty New York homes. Here's what the numbers actually show.",
+    category: "Windows",
     date: "November 2025",
-    href: "/blog/camera-inspection-worth-it",
+    href: "/blog/energy-star-windows-worth-it",
   },
 ];
 
@@ -91,7 +91,7 @@ function PostCard({ post, delay }: { post: typeof posts[number]; delay: string }
           <span className="p3 ia-dark" style={{ fontSize: "1.2rem", opacity: 0.6 }}>{post.date}</span>
         </div>
         <h3 className="h6 ia-margin-1">
-          {/* [TODO: Enable when blog CMS is wired up] */}
+          {/* [TODO: Enable links when blog CMS is wired up] */}
           {post.title}
         </h3>
         <p className="p3 ia-regular ia-dark" style={{ marginBottom: "1.2rem" }}>
@@ -132,7 +132,7 @@ export default function BlogPage() {
               <span className="post post-page current-item">Blog</span>
             </div>
             <h1 className={`ia-white ia-margin-0 fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
-              Drain Tips & Homeowner Guides
+              Home Improvement Guides & Tips
             </h1>
           </div>
         </div>
@@ -140,12 +140,13 @@ export default function BlogPage() {
         <div className="hero-org__bottom flex-module">
           <div className="inner inner--slim-1172 cleared">
             <div className={`hero-org__left wow${heroVis}`}>
-              <div className={`sub-heading fadeInUpS wow${heroVis}`}>From the Pipe Monkeys Team</div>
+              <div className={`sub-heading fadeInUpS wow${heroVis}`}>From the PHR Team</div>
               <div className={`content-entry fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.1s" }}>
                 <p>
-                  Practical advice from the techs who clear drains in Brooklyn, Queens, and Nassau
-                  County every single day. No fluff — just the honest information homeowners
-                  and building managers actually need.
+                  Practical advice from remodeling professionals who have been working in
+                  Queens, Brooklyn, Nassau County, and the New York metro area for over
+                  40 years. No fluff — just the honest information homeowners actually need
+                  before starting a project.
                 </p>
               </div>
             </div>
@@ -168,9 +169,9 @@ export default function BlogPage() {
                   </a>
                 </li>
                 <li className={`fadeInUpS wow${heroVis}`} style={{ animationDelay: "0.3s" }}>
-                  <a className="ia-link ia-link--arrow" href="tel:7187491830">
+                  <a className="ia-link ia-link--arrow" href="tel:5166365300">
                     <i className="icon-link" />
-                    <span>Call (718) 749-1830</span>
+                    <span>Call (516) 636-5300</span>
                   </a>
                 </li>
               </ul>
@@ -207,22 +208,23 @@ export default function BlogPage() {
       >
         <div className="inner inner--slim-1172">
           <div className={`sub-heading wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.1s" }}>
-            Have a Drain Emergency?
+            Ready to Talk About Your Project?
           </div>
           <h2 className={`h2 wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
-            Don&apos;t Wait — We Pick Up Fast
+            Free Estimates — 7 Days a Week
           </h2>
           <div className={`front-donation__in wow fadeInUpS${ctaInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
             <div className="content-entry">
               <p>
-                Call <strong>(718) 749-1830</strong> and we&apos;ll give you an ETA on the spot.
-                Same-day service available seven days a week across Brooklyn, Queens, and Nassau County.
+                Call <strong>(516) 636-5300</strong> (Nassau/Suffolk) or{" "}
+                <strong>(718) 316-9221</strong> (NYC &amp; Westchester) —
+                we&apos;ll give you a straight answer on scope and cost with no pressure.
               </p>
             </div>
             <div className="front-donation__btn-wrap">
               <div className="front-donation__btn">
-                <a className="btn btn--primary" href="tel:7187491830">
-                  Call (718) 749-1830
+                <a className="btn btn--primary" href="tel:5166365300">
+                  Call Nassau: (516) 636-5300
                 </a>
               </div>
             </div>

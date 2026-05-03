@@ -28,7 +28,7 @@ export default function Announcements() {
 
         <div className="front-announcements__inner">
           <div className="sub-heading">How It Works</div>
-          <h3 className="h3">Fast, Clean, and Priced Up Front</h3>
+          <h3 className="h3">A Straight Deal from Start to Finish</h3>
         </div>
 
         <div className="relative z-20 front-announcements__content">
@@ -49,7 +49,7 @@ export default function Announcements() {
                   backgroundColor: '#101d2b',
                 }}
               />
-              {/* [TODO: Replace with Pipe Monkeys team or job site photo] */}
+              {/* [TODO: Replace with a Professional Home Remodeling project photo — kitchen, bathroom, or exterior] */}
             </div>
           </div>
 
@@ -57,30 +57,32 @@ export default function Announcements() {
           <div className="front-announcements__text">
             <div className="content-entry">
               <p>
-                Every call starts the same way: we show up, diagnose the problem in front
-                of you, explain exactly what needs to happen, and give you the price before
-                a single tool touches your drain. No guessing, no surprise invoices — just
-                a straight answer and a plan.
+                Every project starts with a free estimate — no pressure, no obligation.
+                You&apos;ll deal directly with the owner, get a clear price up front,
+                and know exactly what to expect before we break ground. That&apos;s been
+                our approach for over 40 years, and it&apos;s why our business runs on
+                referrals.
               </p>
               <p>
-                <strong>Step 1: Diagnose.</strong> Our tech assesses the blockage and
-                identifies the right tool for the job — snake, auger, or hydro jet.
+                <strong>Step 1: Free Estimate.</strong> We visit the job site, assess
+                the scope, and give you a detailed written estimate at no charge.
               </p>
               <p>
-                <strong>Step 2: Approve &amp; Clear.</strong> You get the price first.
-                Once you&apos;re ready, we go to work. Most jobs are done in under an hour.
+                <strong>Step 2: Approve &amp; Schedule.</strong> Once you&apos;re
+                comfortable with the plan and price, we lock in your start date.
+                No surprises from contract to completion.
               </p>
               <p>
-                <strong>Step 3: Confirm &amp; Clean Up.</strong> We test the flow in front
-                of you, clean the work area, and don&apos;t leave until the drain is
-                fully clear.
+                <strong>Step 3: Complete &amp; Clean Up.</strong> Our crew handles
+                the work from start to finish, removes all debris, and doesn&apos;t
+                consider the job done until you&apos;re satisfied.
               </p>
             </div>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginTop: '2.5rem' }}>
               <SecondaryButton
                 href="/contact-us"
-                label="Schedule Service"
+                label="Get a Free Estimate"
                 wow
               />
               <SecondaryButton

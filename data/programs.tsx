@@ -34,17 +34,19 @@ export type ProgramsPageData = {
 export const programsData: ProgramsPageData = {
   navItems: [
     { href: "#flex-module-3", label: "Service Details" },
-    { href: "#flex-module-4", label: "Service Areas"  },
+    { href: "#flex-module-4", label: "Service Areas"   },
   ],
 
   hero: {
     bgImage: "/images/IMG_9750-1024x683.jpg",
+    // [TODO: Replace with a PHR project photo]
     title: "Our Services",
     description: (
       <p>
-        Pipe Monkeys handles every type of drain and sewer issue across
-        Brooklyn, Queens, and Nassau County — from a slow kitchen sink to a
-        fully blocked main line.
+        Professional Home Remodeling handles the full range of home improvement
+        work across Queens, Brooklyn, the Bronx, Nassau County, Suffolk County,
+        and Westchester — from kitchens and bathrooms to roofing, siding,
+        windows, masonry, and emergency repairs.
       </p>
     ),
     breadcrumbParentLabel: "Services",
@@ -55,17 +57,19 @@ export const programsData: ProgramsPageData = {
     content: (
       <>
         <p>
-          Every job starts the same way: we diagnose the problem, explain the
-          solution in plain language, and give you the price before any work
-          begins. Our techs carry professional-grade cutters, snakes, augers,
-          and hydro-jetting equipment — so whatever the line throws at us,
-          we&rsquo;re ready.
+          Every project starts the same way: we provide a free estimate, give
+          you a straight answer on scope and cost, and don&apos;t start until
+          you&apos;re comfortable with the plan. Our owner is involved in every
+          job — you&apos;re not being handed off to a subcontractor you&apos;ve
+          never met.
         </p>
         <p>
-          We work in residential homes, brownstones, pre-war walk-ups, condos,
-          and multi-family buildings. Same-day scheduling available. Near-instant
-          response for emergencies. Call{" "}
-          <a href="tel:7187491830">(718) 749-1830</a> to get started.
+          We&apos;re licensed in NYC, Nassau, Suffolk, and Westchester, GAF
+          Certified, A+ rated with the BBB, and OSHA compliant on every site.
+          Call{" "}
+          <a href="tel:5166365300">(516) 636-5300</a> (Nassau/Suffolk) or{" "}
+          <a href="tel:7183169221">(718) 316-9221</a> (NYC &amp; Westchester)
+          to get started.
         </p>
       </>
     ),
@@ -76,101 +80,105 @@ export const programsData: ProgramsPageData = {
 
   programs: [
     {
-      title: "Main Sewer Line Clearing",
+      title: "Kitchen Remodeling",
       content: (
         <p>
-          Roots, scale, grease buildup, and heavy blockages in the main line
-          require pro-level equipment — not a standard snake from the hardware
-          store. Our techs use industrial cutters and jetting to restore full
-          flow to your main sewer line and confirm it before leaving. We handle
-          this every day in Brooklyn brownstones, Queens multi-families, and
-          Nassau County homes with long sewer runs.
+          We remodel kitchens from the studs up — demo, insulation, sheetrock,
+          flooring, custom cabinetry with crown molding, granite or quartz
+          countertops, custom sinks and faucets, backsplash tile, and finish
+          paint. Every project is designed around what you actually want your
+          kitchen to look like.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/main-sewer-lines",
+      learnMoreHref: "/craft-catalog/kitchen-remodeling",
     },
     {
-      title: "Kitchen Sink Drain Clearing",
+      title: "Bathroom Remodeling",
       content: (
         <p>
-          Grease, food debris, and soap scum are the most common kitchen culprits
-          — and they build up fast in NYC buildings with heavy daily use. We
-          clear kitchen drains using professional cutters and hydro jetting
-          depending on the severity, leaving the line fully open and grease-free.
-          No mess, no damage to pipes, and no recurring clogs if you go with
-          jetting.
+          Full bathroom renovations built to your specifications. We demo to
+          the studs, install proper waterproofing and backer board, then
+          rebuild with custom tile, new fixtures — tubs, showers, toilets,
+          vanities, and medicine cabinets — and all-new finishes. Debris
+          removal always included.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/kitchen-sinks",
+      learnMoreHref: "/craft-catalog/bathroom-remodeling",
     },
     {
-      title: "Tub & Shower Drain Clearing",
+      title: "Roofing",
       content: (
         <p>
-          Hair, soap buildup, and mineral deposits accumulate silently until
-          you&rsquo;re standing in ankle-deep water. Our techs remove the
-          blockage cleanly — no torn-up tile, no chemical damage to pipes — and
-          leave the bathroom exactly as they found it. Shoe covers and drop
-          cloths every time.
+          GAF Certified roof installations and repairs serving the New York
+          metro area. We handle targeted leak repairs, full replacements, and
+          emergency storm damage response. Free inspections available. We
+          provide written documentation for insurance claims when needed.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/tubs-and-showers",
+      learnMoreHref: "/craft-catalog/roofing",
     },
     {
-      title: "Toilet Clog Clearing",
+      title: "Siding",
       content: (
         <p>
-          Stubborn toilet clogs — including foreign objects, excessive paper,
-          and hard-to-reach blockages — are cleared fast with the right auger
-          and technique. We&rsquo;ve retrieved everything from children&rsquo;s
-          toys to full pipe obstructions. No splash, no stress, and we test the
-          flush before we leave.
+          Insulated vinyl siding in 20+ colors, complete with styrofoam
+          insulation board, aluminum fascia, window and door recaps, caulking,
+          and a custom seamless gutter and leader system. Lifetime
+          manufacturer&apos;s guarantee on all siding installed by our crew.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/toilets",
+      learnMoreHref: "/craft-catalog/siding",
     },
     {
-      title: "Hydro Jetting",
+      title: "Window Replacement",
       content: (
         <p>
-          Snaking clears a path through the clog. Hydro jetting actually scrubs
-          grease, scale, and buildup off the pipe walls — giving you a like-new
-          interior and dramatically reducing repeat clogs. If you&rsquo;ve been
-          dealing with the same drain backing up every few months, jetting is
-          the long-term fix. Available for kitchen lines, main sewer lines, and
-          commercial buildings.
+          Energy Star-rated replacement windows with 7/8-inch insulated glass,
+          Low E coating, argon gas fills, and solid vinyl welded frames. We
+          measure for direct replacement, handle all installation and
+          aluminum capping, and cart away all debris.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/hydro-jetting",
+      learnMoreHref: "/craft-catalog/windows",
     },
     {
-      title: "Camera Inspection",
+      title: "Masonry & Concrete",
       content: (
         <p>
-          Before we recommend a repair or jetting service on your main line, we
-          can run a camera to show you exactly what&rsquo;s in there — root
-          intrusion, pipe damage, grease buildup, or collapsed sections. You see
-          what we see, in real time, so there&rsquo;s no guesswork and no
-          upselling on work you don&rsquo;t need.
+          4,000 PSI concrete driveways, walkways, sidewalks, stoops, and
+          patios. Custom brickwork and Cambridge paving stones for exterior
+          hardscaping. Exterior brick pointing and concrete basement
+          waterproofing. On-site dumpsters for all debris removal.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/camera-inspection",
+      learnMoreHref: "/craft-catalog/masonry",
     },
     {
-      title: "Multi-Unit & Commercial Buildings",
+      title: "Basement Waterproofing",
       content: (
         <p>
-          We work with brownstones, pre-war walk-ups, condos, co-ops, and
-          multi-family buildings across Brooklyn and Queens every single day.
-          Stack drain issues, shared main lines, and building-wide backups are
-          all in our wheelhouse. We coordinate with building managers and
-          minimize disruption to tenants throughout the job.
+          We address the root cause of basement flooding — whether it&apos;s
+          groundwater seepage, drainage failure, sump pump issues, or
+          foundation compromise. Concrete basement waterproofing solutions
+          tailored to your specific problem, with written estimates before
+          any work begins.
         </p>
       ),
-      learnMoreHref: "/craft-catalog/multi-unit-buildings",
+      learnMoreHref: "/craft-catalog/basement-waterproofing",
+    },
+    {
+      title: "Emergency Repairs",
+      content: (
+        <p>
+          Fast response to roof leaks and basement flooding across the New York
+          metro area. We assess the full scope of the damage, address the
+          immediate problem, and provide documentation for insurance claims.
+          Call us any time — we respond to emergencies seven days a week.
+        </p>
+      ),
+      learnMoreHref: "/craft-catalog/emergency-repairs",
     },
   ],
 
-  // No external partners — use service area neighborhoods instead
   partners: [],
 };

@@ -3,33 +3,34 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { useInView } from "framer-motion";
 
-// TODO: Replace placeholder reviews with real Google reviews from Pipe Monkeys.
-// Daniel Pipitone is confirmed real. The others are placeholders — request from client.
+// TODO: Replace placeholder reviews with real verified reviews from Google, Yelp, or Facebook.
+// Request 3–5 real reviews from client before launch.
 const testimonials = [
   {
-    id: "daniel-pipitone",
+    id: "review-1",
+    // TODO: Replace with a real verified review
     quote:
-      "Professional service with a very fair price. They send you info about the assigned technician in advance and showed up exactly on time. They cleaned up nicely after snaking a drain line on the 2nd floor of a 3 story building. Forget Roto Rooter — Pipe Monkeys will be my new go-to for plumbing needs.",
-    name: "Daniel Pipitone",
-    position: "Brooklyn Homeowner",
+      "Professional Home Remodeling did a complete kitchen renovation for us and the result was exactly what we envisioned. They dealt with us directly — no middlemen — gave us a fair price, and the crew was clean and professional throughout. We've already referred them to two neighbors.",
+    name: "Homeowner, Franklin Square",
+    position: "Nassau County",
     platform: "Google Review ★★★★★",
   },
   {
-    id: "maria-santos",
-    // TODO: Replace with a real Google review from client
+    id: "review-2",
+    // TODO: Replace with a real verified review
     quote:
-      "Called at 9am with a completely backed up kitchen drain. Tech was here by 11, cleared it in under an hour. He explained exactly what caused the clog and how to prevent it. Pricing was upfront and fair — no pushing extras I didn't need. Will absolutely use them again.",
-    name: "Maria Santos",
-    position: "Queens Homeowner",
+      "We had our entire exterior done — siding, windows, and gutters — all in one project. The color selection process was easy and the installation was seamless. The lifetime guarantee on the siding gave us real peace of mind. Highly recommend.",
+    name: "Homeowner, Bayside",
+    position: "Queens",
     platform: "Google Review ★★★★★",
   },
   {
-    id: "james-oconnor",
-    // TODO: Replace with a real Google review from client
+    id: "review-3",
+    // TODO: Replace with a real verified review
     quote:
-      "Had a main line backup that two other companies couldn't fully clear. Pipe Monkeys came the same afternoon, ran a camera first so we could see exactly what was in there, then jetted it clean. You could see the difference on the camera footage after. Highly recommend for any serious sewer issue.",
-    name: "James O'Connor",
-    position: "Nassau County Homeowner",
+      "Had a roof leak that two other contractors couldn't properly fix. PHR came out, found the real source of the problem, and repaired it correctly the first time. They also documented everything for our insurance claim. Honest, experienced, and they stand behind their work.",
+    name: "Homeowner, Woodmere",
+    position: "Nassau County",
     platform: "Google Review ★★★★★",
   },
 ];
@@ -160,13 +161,11 @@ export default function Testimonial() {
     []
   );
 
-  // Auto-advance every 6 seconds
   useEffect(() => {
     const id = setInterval(() => go(1), 6000);
     return () => clearInterval(id);
   }, [go]);
 
-  // Slide height estimate — enough for the longest quote
   const SLIDE_HEIGHT = "28rem";
 
   return (
@@ -179,7 +178,7 @@ export default function Testimonial() {
           className={`h3 ia-white fadeInUpS wow${vis}`}
           style={{ animationDelay: "0.1s" }}
         >
-          Real Reviews From Real Neighbors
+          Real Results. Real Neighbors.
         </h2>
       </div>
 
@@ -192,7 +191,6 @@ export default function Testimonial() {
           margin: "0 auto",
         }}
       >
-        {/* Slide viewport */}
         <div
           style={{
             position: "relative",
@@ -210,7 +208,6 @@ export default function Testimonial() {
           ))}
         </div>
 
-        {/* Controls row */}
         <div
           style={{
             display: "flex",
@@ -223,7 +220,6 @@ export default function Testimonial() {
           <ArrowBtn dir="prev" onClick={() => go(-1)} />
           <ArrowBtn dir="next" onClick={() => go(1)} />
 
-          {/* Dot indicators */}
           <div style={{ display: "flex", gap: "0.8rem", marginLeft: "0.5rem" }}>
             {testimonials.map((_, i) => (
               <button

@@ -16,23 +16,25 @@ export default function HomeCTA() {
     >
       <div className="inner inner--slim-1172">
         <div className={`sub-heading wow fadeInUpS${vis}`} style={{ animationDelay: "0.1s" }}>
-          Same-Day Service Available
+          Free Estimates — 7 Days a Week
         </div>
         <h2 className={`h2 wow fadeInUpS${vis}`} style={{ animationDelay: "0.15s" }}>
-          Don&apos;t Wait — Call Now
+          Ready to Get Started? Call Now
         </h2>
         <div className={`front-donation__in wow fadeInUpS${vis}`} style={{ animationDelay: "0.2s" }}>
           <div className="content-entry">
             <p>
-              Backed up drains don&apos;t fix themselves. Our Brooklyn, Queens &amp; Nassau County
-              techs are on the road every day — call us and we&apos;ll get someone out fast.
+              We serve Queens, Brooklyn, the Bronx, Nassau County, Suffolk County, and
+              Westchester. Call Nassau at <strong>(516) 636-5300</strong> or NYC &amp;
+              Westchester at <strong>(718) 316-9221</strong> — our team picks up fast
+              and we can schedule your free estimate today.
             </p>
           </div>
           <div className="front-donation__btn-wrap">
             <div className="front-donation__btn">
               <SecondaryButton
-                label="Call (718) 749-1830"
-                href="tel:7187491830"
+                label="Call Nassau: (516) 636-5300"
+                href="tel:5166365300"
               />
             </div>
           </div>

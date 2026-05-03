@@ -12,58 +12,28 @@ interface FaqItem {
 
 const faqItems: FaqItem[] = [
   {
-    title: "How quickly can you get here?",
+    title: "Do you offer free estimates?",
     content: (
       <p>
-        Most calls are scheduled the same day, and we offer near-instant
-        response for urgent clogs. Timing depends on your exact neighborhood,
-        but we move fast. Call us at{" "}
-        <a href="tel:7187491830" className="ia-link">(718) 749-1830</a>{" "}
-        and we&apos;ll give you an accurate ETA on the spot.
+        Yes — always. We provide free written estimates for all projects, seven
+        days a week. There&apos;s no obligation, and we don&apos;t pressure you
+        into signing on the spot. Call{" "}
+        <a href="tel:5166365300" className="ia-link">(516) 636-5300</a> for
+        Nassau and Suffolk, or{" "}
+        <a href="tel:7183169221" className="ia-link">(718) 316-9221</a> for
+        NYC and Westchester.
       </p>
     ),
   },
   {
-    title: "Do you give upfront pricing?",
+    title: "Who will I be dealing with on my project?",
     content: (
       <p>
-        Always. We diagnose the issue, explain the solution, and give you the
-        price before any work starts. No surprises, no upsell games. What we
-        quote is what you pay — period.
-      </p>
-    ),
-  },
-  {
-    title: "What tools do you use to clear drains?",
-    content: (
-      <p>
-        We carry professional cutters, snakes, augers, and hydro-jetting
-        equipment on every truck. Your tech will choose the safest and most
-        effective method for your specific line and problem — and explain why
-        before starting.
-      </p>
-    ),
-  },
-  {
-    title: "When should I consider hydro jetting instead of snaking?",
-    content: (
-      <p>
-        Snaking clears a path through the clog. Jetting actually scrubs grease,
-        scale, and buildup off the pipe walls — giving you a cleaner line and
-        much longer-lasting results. If you get repeat clogs in the same drain,
-        jetting is usually the right call. We&apos;ll tell you honestly which
-        one makes sense for your situation.
-      </p>
-    ),
-  },
-  {
-    title: "Do you service apartments and multi-unit buildings?",
-    content: (
-      <p>
-        All the time. We work with brownstones, pre-war buildings, walk-ups,
-        condos, co-ops, and multi-family homes across Brooklyn, Queens, and
-        Nassau County every day. We coordinate with building managers and work
-        to minimize disruption to other tenants.
+        You deal directly with the owner throughout the entire process — from
+        estimate to final walkthrough. We don&apos;t hand you off to a sales
+        rep or a project manager you&apos;ve never met. That direct
+        relationship is how we&apos;ve built our reputation on referrals for
+        over 40 years.
       </p>
     ),
   },
@@ -71,35 +41,79 @@ const faqItems: FaqItem[] = [
     title: "What areas do you serve?",
     content: (
       <>
-        <p>We serve all of Brooklyn, Queens, and Nassau County including:</p>
         <p>
-          <strong>Brooklyn:</strong> Williamsburg, Greenpoint, Bushwick,
-          Bed-Stuy, Crown Heights, Park Slope, Sunset Park, Bay Ridge,
-          Bensonhurst, Dyker Heights, Gravesend, Sheepshead Bay, Coney Island
-          and more.
+          We serve the full New York metro area, including Queens, Brooklyn,
+          the Bronx, Nassau County, Suffolk County, and Westchester County.
+          We maintain active licenses in each region.
         </p>
         <p>
-          <strong>Queens:</strong> Astoria, LIC, Maspeth, Flushing, Whitestone,
-          Bayside, Forest Hills, Rego Park, Jackson Heights, Elmhurst, Middle
-          Village and more.
+          <strong>Queens:</strong> Astoria, Bayside, Flushing, Forest Hills,
+          Jamaica, Maspeth, Ridgewood, Whitestone, and all other neighborhoods.
         </p>
         <p>
-          <strong>Nassau County:</strong> Valley Stream, Elmont, Franklin
-          Square, West Hempstead, Hempstead, Garden City, Mineola, New Hyde
-          Park, Rockville Centre, Oceanside, Freeport, Merrick, Bellmore,
-          Levittown, East Meadow and more.
+          <strong>Nassau County:</strong> Franklin Square, Garden City, Great
+          Neck, Hempstead, Levittown, Manhasset, Massapequa, Mineola, Rockville
+          Centre, and more.
+        </p>
+        <p>
+          <strong>Suffolk County:</strong> Amityville, Babylon, Bay Shore,
+          Commack, Huntington, Smithtown, and throughout the Island.
         </p>
       </>
     ),
   },
   {
-    title: "Do you clean up after the job?",
+    title: "Are you licensed and insured?",
     content: (
       <p>
-        Yes — always. Every tech wears shoe covers, lays down drop cloths, and
-        cleans the workspace before leaving. We test the flow, show you the
-        results, and make sure your home is cleaner than we found it. That
-        &apos;s not a bonus — it&apos;s standard.
+        Yes. We hold active licenses in NYC (DCA# 2076470), Westchester
+        (WC-32201-H19), Suffolk (HI-61255), and Nassau (157681). We are fully
+        insured and bonded, GAF Certified Installers, A+ rated with the Better
+        Business Bureau, and operate to OSHA safety standards on every job site.
+      </p>
+    ),
+  },
+  {
+    title: "Do you offer discounts?",
+    content: (
+      <p>
+        Yes. We offer special discounts for senior citizens, veterans and active
+        military, and teachers. Mention your discount when you call for your
+        free estimate.
+      </p>
+    ),
+  },
+  {
+    title: "How long does a kitchen or bathroom remodel take?",
+    content: (
+      <p>
+        Most full kitchen remodels take 2–4 weeks depending on the scope of
+        work, material lead times, and the size of the kitchen. Bathroom
+        remodels typically run 1–2 weeks. We give you a realistic timeline
+        during the estimate so you can plan accordingly — and we stick to it.
+      </p>
+    ),
+  },
+  {
+    title: "Do you handle emergency repairs?",
+    content: (
+      <p>
+        Yes. We handle emergency roof leaks and basement flooding across all
+        of our service areas. Call us as soon as the problem develops — both
+        issues get significantly worse the longer they&apos;re left unaddressed.
+        We respond fast, assess the full scope, and address the immediate
+        problem the same day when possible.
+      </p>
+    ),
+  },
+  {
+    title: "Can you help with insurance claims for storm or water damage?",
+    content: (
+      <p>
+        Yes. For roof damage, flooding, and storm-related repairs, we provide
+        written documentation of the damage and the work completed that most
+        insurance carriers accept. We can also communicate directly with your
+        adjuster to help move the claim forward.
       </p>
     ),
   },
@@ -192,21 +206,22 @@ export default function GeneralFaqsPage() {
               Still have questions?
             </div>
             <h2 className={`h2 wow fadeInUpS${donationInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
-              We&apos;re Here to Help
+              Call Us — We Pick Up Fast
             </h2>
             <div className={`front-donation__in wow fadeInUpS${donationInView ? " is-visible" : ""}`} style={{ animationDelay: "0.2s" }}>
               <div className="content-entry">
                 <p>
-                  Call us at <strong>(718) 749-1830</strong> — our team picks up fast
-                  and can answer any question, schedule a same-day visit, or give you
-                  an honest assessment over the phone.
+                  Nassau &amp; Suffolk: <strong>(516) 636-5300</strong> &mdash;
+                  NYC &amp; Westchester: <strong>(718) 316-9221</strong>.
+                  Our team answers questions, schedules estimates, and gives you
+                  an honest assessment over the phone — seven days a week.
                 </p>
               </div>
               <div className="front-donation__btn-wrap">
                 <div className="front-donation__btn">
                   <SecondaryButton
-                    label="Call (718) 749-1830"
-                    href="tel:7187491830"
+                    label="Call Nassau: (516) 636-5300"
+                    href="tel:5166365300"
                   />
                 </div>
               </div>
