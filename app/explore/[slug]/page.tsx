@@ -14,6 +14,23 @@ export function generateStaticParams() {
   return Object.keys(channelDataMap).map((slug) => ({ slug }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const data = getChannelData(slug);
+  if (!data) return {};
+  // phr-ny is the only registered slug — tailor the metadata directly.
+  return {
+    title: "About Us — Professional Home Remodeling Inc. | 40+ Years Serving NYC & Long Island",
+    description:
+      "Family-owned and operated for over 40 years. Professional Home Remodeling Inc. serves Queens, Brooklyn, the Bronx, Nassau, Suffolk, and Westchester. GAF Certified. A+ BBB. Deal directly with the owner.",
+    alternates: { canonical: `https://www.phr-ny.com/explore/${slug}` },
+  };
+}
+
 export default async function ChannelPage({
   params,
 }: {

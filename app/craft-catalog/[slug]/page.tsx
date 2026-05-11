@@ -22,8 +22,9 @@ export async function generateMetadata({
   const data = servicePages[slug];
   if (!data) return {};
   return {
-    title: `${data.title} — Professional Home Remodeling Inc.`,
-    description: `Professional ${data.title.toLowerCase()} service in Brooklyn, Queens, and Nassau County. Upfront pricing, same-day scheduling, guaranteed results.`,
+    title: `${data.title} in Queens, Brooklyn & Nassau County — Professional Home Remodeling Inc.`,
+    description: `Expert ${data.title.toLowerCase()} serving Queens, Brooklyn, the Bronx, Nassau County, Suffolk County, and Westchester. 40+ years of experience. Free estimates. Licensed, insured & GAF Certified. Call (516) 636-5300.`,
+    alternates: { canonical: `https://www.phr-ny.com/craft-catalog/${slug}` },
   };
 }
 

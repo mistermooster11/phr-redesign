@@ -8,7 +8,19 @@ const quickLinks = [
   { label: "Frequently Asked Questions", href: "/general-faqs",    external: false },
   { label: "Service Areas",              href: "/service-areas",   external: false },
   { label: "Before & After Gallery",     href: "/gallery",         external: false },
+  { label: "About Us",                   href: "/explore/phr-ny",  external: false },
   { label: "Contact Us",                 href: "/contact-us",      external: false },
+];
+
+const serviceLinks = [
+  { label: "Kitchen Remodeling",       href: "/craft-catalog/kitchen-remodeling"       },
+  { label: "Bathroom Remodeling",      href: "/craft-catalog/bathroom-remodeling"      },
+  { label: "Roofing",                  href: "/craft-catalog/roofing"                  },
+  { label: "Siding",                   href: "/craft-catalog/siding"                   },
+  { label: "Window Replacement",       href: "/craft-catalog/windows"                  },
+  { label: "Masonry & Concrete",       href: "/craft-catalog/masonry"                  },
+  { label: "Basement Waterproofing",   href: "/craft-catalog/basement-waterproofing"   },
+  { label: "Emergency Repairs",        href: "/craft-catalog/emergency-repairs"        },
 ];
 
 const socials = [
@@ -53,6 +65,18 @@ export default function Footer() {
                   <a href={link.href} target={link.external ? "_blank" : "_self"}>
                     {link.label}
                   </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div className={`footer__widget footer__widget-quick-links fadeInUpS wow${vis}`}>
+            <h3 className="footer__heading">Our Services</h3>
+            <ul>
+              {serviceLinks.map((link) => (
+                <li key={link.label}>
+                  <a href={link.href}>{link.label}</a>
                 </li>
               ))}
             </ul>

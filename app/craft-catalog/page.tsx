@@ -5,6 +5,7 @@ export const metadata = {
   title: "Our Services — Professional Home Remodeling Inc.",
   description:
     "Professional Home Remodeling Inc. provides kitchen remodeling, bathroom renovations, roofing, siding, windows, masonry, and more across Queens, Brooklyn, Nassau County, Suffolk County, the Bronx, and Westchester.",
+  alternates: { canonical: "https://www.phr-ny.com/craft-catalog" },
 };
 
 export default function CraftCatalogPage() {
