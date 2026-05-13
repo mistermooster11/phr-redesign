@@ -622,10 +622,15 @@
 .ia-margin-3 { margin-bottom: 3rem !important; }
 .text-right  { text-align: right; }
 
-/* ia-bg-dark text defaults */
+/* ia-bg-dark text defaults — ia-bg-dark is yellow, so all text must be black */
 .ia-bg-dark, .ia-bg-dark h1, .ia-bg-dark h2, .ia-bg-dark h3,
-.ia-bg-dark h4, .ia-bg-dark h5, .ia-bg-dark p, .ia-bg-dark li { color: #fff; }
-.ia-bg-dark .ia-link { color: #fff; }
+.ia-bg-dark h4, .ia-bg-dark h5, .ia-bg-dark p, .ia-bg-dark li { color: #000000; }
+.ia-bg-dark .ia-link { color: #000000; }
+/* Override ia-white/ia-sky on any child or self of ia-bg-dark (yellow bg → black text) */
+.ia-bg-dark .ia-white,
+.ia-bg-dark.ia-white { color: #000000; }
+.ia-bg-dark .ia-sky,
+.ia-bg-dark.ia-sky { color: #000000; }
 
 /* section-page extend (dark/sky bg bleeds) */
 .channel-container .flex-module.ia-bg-dark { position: relative; }
