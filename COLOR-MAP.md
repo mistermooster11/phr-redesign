@@ -59,7 +59,7 @@
 |---------|------------|-----------|----------|--------------|
 | **Craft Catalog hero** | `#F8CB3E` yellow | `#000000` black | `#000000` black | Breadcrumbs: black |
 | **Service listing cards** | `#FFFFFF` white | `#000000` black | `#000000` black | Red accent |
-| **Single service hero** (CraftHero) | `#000000` black | `#FFFFFF` white | `#FFFFFF` white | White breadcrumbs |
+| **Single service hero** (CraftHero) | Dark image + black gradient overlay | `#FFFFFF` white | `#FFFFFF` white | White breadcrumbs + white links (use `ia-white`; CSS rule `.hero-craft * { color: #fff }`) |
 | **Service detail content** | `#FFFFFF` white | `#000000` black | `#000000` black | Black |
 | **CTA banner** (bottom of service page) | `#000000` black | `#FFFFFF` white | `#FFFFFF` white | Links = `#F8CB3E` yellow |
 

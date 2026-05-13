@@ -185,6 +185,12 @@
 }
 .hero-craft .inner { z-index: 11; position: relative; }
 .hero-craft .content-entry { max-width: 775px; }
+/* hero-craft has a dark image overlay — all text must be white */
+.hero-craft h1,
+.hero-craft .breadcrumbs,
+.hero-craft .breadcrumbs a,
+.hero-craft .breadcrumbs span,
+.hero-craft .breadcrumbs em { color: #ffffff !important; border-color: rgba(255,255,255,0.45) !important; }
 .channel-container .hero-org__bottom { padding-top: 0; }
 
 @media (max-width: 767px) {
