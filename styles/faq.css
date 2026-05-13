@@ -48,7 +48,7 @@
   color: #D0011B;
   transition: transform .35s;
 }
-.accordion-title-flex.current { color: #3f5e9d; }
+.accordion-title-flex.current { color: #000000; }
 .accordion-title-flex.current i { transform: translate(-50%, -50%) scaleY(-1); }
 
 /* ── 6. Accordion info (collapsible) ── */
@@ -74,7 +74,7 @@
 }
 .accordion-info-flex table thead th {
   background: #F8CB3E;
-  color: #fff;
+  color: #000000;
   font-weight: 600;
 }
 .accordion-info-flex table tbody tr:nth-child(even) td {

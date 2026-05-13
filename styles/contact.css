@@ -10,13 +10,13 @@
 .breadcrumbs > span { margin: 0 0 5px; display: inline-block; }
 .breadcrumbs > em   { margin: 0 5px; display: inline-block; font-style: normal; }
 .breadcrumbs a {
-  color: #a1c5d3; border-bottom: 1px solid #a1c5d3; transition: opacity .35s;
+  color: #000000; border-bottom: 1px solid #000000; transition: opacity .35s;
   text-decoration: none;
 }
 .breadcrumbs a:hover { opacity: 0.7; }
 /* on dark bg the breadcrumbs are opaque white */
 .ia-bg-dark .breadcrumbs { opacity: 1; }
-.ia-bg-dark .breadcrumbs a { color: #a1c5d3; border-color: #a1c5d3; }
+.ia-bg-dark .breadcrumbs a { color: #ffffff; border-color: #ffffff; }
 
 /* ── Sub heading ── */
 .sub-heading {

@@ -116,18 +116,18 @@ function ArrowBtn({
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
-        color: "#a1c5d3",
+        color: "#000000",
         flexShrink: 0,
         transition: "border-color 0.25s, color 0.25s",
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLButtonElement).style.borderColor = "#a1c5d3";
+        (e.currentTarget as HTMLButtonElement).style.borderColor = "#F8CB3E";
         (e.currentTarget as HTMLButtonElement).style.color = "#fff";
       }}
       onMouseLeave={(e) => {
         (e.currentTarget as HTMLButtonElement).style.borderColor =
           "rgba(161,197,211,0.35)";
-        (e.currentTarget as HTMLButtonElement).style.color = "#a1c5d3";
+        (e.currentTarget as HTMLButtonElement).style.color = "#000000";
       }}
     >
       {dir === "prev" ? (
@@ -235,7 +235,7 @@ export default function Testimonial() {
                   borderRadius: "50%",
                   border: "none",
                   cursor: "pointer",
-                  background: i === active ? "#a1c5d3" : "rgba(161,197,211,0.3)",
+                  background: i === active ? "#D0011B" : "rgba(0,0,0,0.2)",
                   transition: "background 0.3s",
                   padding: 0,
                 }}

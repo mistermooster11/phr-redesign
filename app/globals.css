@@ -4,7 +4,7 @@
 @theme inline {
   --color-brand-orange: #D0011B; /* red — replaces original orange */
   --color-brand-navy: #F8CB3E;   /* yellow — replaces original navy */
-  --color-brand-sky: #a1c5d3;
+  --color-brand-sky: #000000;
   --color-brand-blue: #3f5e9d;
   --color-brand-gray: #f2f2f2;
   --font-sans: var(--font-poppins), "Poppins", sans-serif;
@@ -14,7 +14,7 @@
   :root {
     --c-orange: #D0011B; /* red */
     --c-navy: #F8CB3E;   /* yellow */
-    --c-sky: #a1c5d3;
+    --c-sky: #000000;
     --c-blue: #3f5e9d;
     --c-gray: #f2f2f2;
     --c-border: #a5a5a5;

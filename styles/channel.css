@@ -352,7 +352,7 @@
 
 /* Featured quote inner — SVG sits absolute at top-left */
 .featured__quote-in { padding-left: 6.5rem; position: relative; }
-.featured__quote-in > svg { color: #a1c5d3; position: absolute; left: 2.5rem; top: 0; }
+.featured__quote-in > svg { color: #000000; position: absolute; left: 2.5rem; top: 0; }
 .featured__quote-text { margin-bottom: 2.5rem; }
 
 .story-person-info.no-photo { display: block; }
