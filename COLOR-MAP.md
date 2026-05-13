@@ -99,6 +99,8 @@
 6. **Primary CTA color = `#D0011B` red** (replaces all original orange `#F28322`).
 7. **No navy (`#172535` / `#101d2b`) anywhere on the site.** Fully replaced by yellow or black.
 8. **No sky-blue (`#a1c5d3`) anywhere.** Replaced by black (on light bg) or white (on dark bg).
+9. **Sub-heading eyebrow text** (`.sub-heading`) uses `var(--c-orange)` globally — on yellow `ia-bg-dark` sections this would show red. Override with `.ia-bg-dark .sub-heading { color: #000000; }`.
+10. **Breadcrumb links on `ia-bg-dark`** — contact.css originally forced these to `#ffffff` (white). Change to `#000000` black. Rule: `.ia-bg-dark .breadcrumbs a { color: #000000; border-color: rgba(0,0,0,0.4); }`.
 
 ---
 
@@ -130,6 +132,15 @@ To apply the PHR brand to a new template:
 .ia-bg-dark, .ia-bg-dark h1, .ia-bg-dark h2, .ia-bg-dark h3,
 .ia-bg-dark h4, .ia-bg-dark h5, .ia-bg-dark p, .ia-bg-dark li { color: #000000; }
 .ia-bg-dark .ia-white, .ia-bg-dark.ia-white { color: #000000; }
+/* Sub-heading eyebrow (normally red) and breadcrumb links (normally white) */
+.ia-bg-dark .sub-heading { color: #000000; }
+.ia-bg-dark .breadcrumbs a { color: #000000 !important; border-color: rgba(0,0,0,0.4) !important; }
+```
+
+### 2b. `contact.css` — fix breadcrumb dark-bg override
+```css
+/* Change the original white-on-dark rule to black-on-yellow */
+.ia-bg-dark .breadcrumbs a { color: #000000; border-color: rgba(0,0,0,0.4); }
 ```
 
 ### 3. `homepage.css` — key overrides

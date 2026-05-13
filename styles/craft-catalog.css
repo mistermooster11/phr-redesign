@@ -631,6 +631,10 @@
 .ia-bg-dark.ia-white { color: #000000; }
 .ia-bg-dark .ia-sky,
 .ia-bg-dark.ia-sky { color: #000000; }
+/* Sub-heading eyebrow text (normally red) must be black on yellow bg */
+.ia-bg-dark .sub-heading { color: #000000; }
+/* Breadcrumb links on yellow bg must be black, not white */
+.ia-bg-dark .breadcrumbs a { color: #000000 !important; border-color: rgba(0,0,0,0.4) !important; }
 
 /* section-page extend (dark/sky bg bleeds) */
 .channel-container .flex-module.ia-bg-dark { position: relative; }
