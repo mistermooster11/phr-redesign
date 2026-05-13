@@ -42,7 +42,7 @@ export default function Navbar({ isLoaded = false, isFixed = false }: NavbarProp
       {/* ── Dropdown panel (nav-wrap equivalent) ── */}
       <div
         className={[
-          "absolute top-full bg-white text-brand-navy",
+          "absolute top-full bg-white text-black",
           "border-t-[5px] border-t-brand-orange rounded-[5px] shadow-[0_0_5px_rgba(0,0,0,.1)]",
           "flex transition-[opacity,visibility] duration-350 z-200",
           isResearch ? "right-0 w-165" : "-left-18.75 w-[calc(100%+150px)]",

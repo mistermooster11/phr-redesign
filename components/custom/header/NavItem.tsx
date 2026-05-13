@@ -58,7 +58,7 @@ const NavItem: React.FC<NavItemProps> = ({ item, index, isLoaded = false, isFixe
           href={item.href}
           target={item.external ? "_blank" : undefined}
           rel={item.external ? "noopener" : undefined}
-          className={`relative block text-white text-[1.4rem] leading-[1.5] text-center py-[1.5rem] mx-[1.5rem] transition-[opacity,transform] duration-[800ms] ${entryClasses}`}
+          className={`relative block text-black text-[1.4rem] leading-[1.5] text-center py-[1.5rem] mx-[1.5rem] transition-[opacity,transform] duration-[800ms] hover:text-[#D0011B] ${entryClasses}`}
           style={{ transitionDelay: delay }}
         >
           {item.label}
@@ -70,7 +70,7 @@ const NavItem: React.FC<NavItemProps> = ({ item, index, isLoaded = false, isFixe
             "relative bg-transparent border-none text-[1.4rem] leading-[1.5] text-center",
             "py-[1.5rem] mx-[1.5rem] cursor-pointer whitespace-nowrap pr-[1rem]",
             "transition-[opacity,transform,color] duration-[800ms]",
-            isActive ? "text-brand-sky" : "text-white",
+            isActive ? "text-[#D0011B]" : "text-black",
             entryClasses,
           ].join(" ")}
           style={{ transitionDelay: delay }}

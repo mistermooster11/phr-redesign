@@ -17,7 +17,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── KITCHEN REMODELING ────────────────────────────────────────────────── */
   "kitchen-remodeling": {
     title: "Kitchen Remodeling",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"          },
       { href: "#when_you_need_it",  label: "What's Included"   },
@@ -109,7 +109,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── BATHROOM REMODELING ───────────────────────────────────────────────── */
   "bathroom-remodeling": {
     title: "Bathroom Remodeling",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"         },
       { href: "#when_you_need_it",  label: "What's Included"  },
@@ -199,7 +199,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── ROOFING ──────────────────────────────────────────────────────────── */
   "roofing": {
     title: "Roofing",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"         },
       { href: "#when_you_need_it",  label: "When You Need It" },
@@ -292,7 +292,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── SIDING ───────────────────────────────────────────────────────────── */
   "siding": {
     title: "Siding",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"         },
       { href: "#when_you_need_it",  label: "What's Included"  },
@@ -383,7 +383,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── WINDOWS ──────────────────────────────────────────────────────────── */
   "windows": {
     title: "Window Replacement",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"         },
       { href: "#when_you_need_it",  label: "What's Included"  },
@@ -472,7 +472,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── MASONRY ──────────────────────────────────────────────────────────── */
   "masonry": {
     title: "Masonry & Concrete",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"         },
       { href: "#when_you_need_it",  label: "What's Included"  },
@@ -562,7 +562,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── BASEMENT WATERPROOFING ────────────────────────────────────────────── */
   "basement-waterproofing": {
     title: "Basement Waterproofing",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"         },
       { href: "#when_you_need_it",  label: "When You Need It" },
@@ -653,7 +653,7 @@ export const servicePages: Record<string, ServicePageData> = {
   /* ─── EMERGENCY REPAIRS ─────────────────────────────────────────────────── */
   "emergency-repairs": {
     title: "Emergency Repairs",
-    bgColor: "#101d2b",
+    bgColor: "#000000",
     navItems: [
       { href: "#overview",          label: "Overview"         },
       { href: "#when_you_need_it",  label: "When to Call"     },
