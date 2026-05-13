@@ -22,7 +22,7 @@ export default function CraftHero({ title, bgImage, breadcrumbs }: CraftHeroProp
         <div style={{ background: `url(${bgImage}) no-repeat center center / cover` }} />
       </div>
       <div className="inner inner--slim-1172">
-        <div className={`breadcrumbs ia-white fadeInUpS wow${vis}`}>
+        <div className={`breadcrumbs ia-dark fadeInUpS wow${vis}`}>
           <Link href="/">Home</Link>
           {breadcrumbs.map((crumb, i) => (
             <span key={i}>
@@ -32,7 +32,7 @@ export default function CraftHero({ title, bgImage, breadcrumbs }: CraftHeroProp
           ))}
         </div>
         <h1
-          className={`h1 ia-white ia-margin-0 fadeInUpS wow${vis}`}
+          className={`h1 ia-dark ia-margin-0 fadeInUpS wow${vis}`}
           style={{ animationDelay: "0.2s" }}
         >
           {title}
