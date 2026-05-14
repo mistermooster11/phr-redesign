@@ -21,7 +21,7 @@ export default function Hero() {
          <div className='relative z-20'>
           <h1
             className={[
-              'text-white font-medium leading-tight mb-16',
+              'text-black font-medium leading-tight mb-16',
               'text-6xl font-extrabold! md:text-7xl lg:text-8xl max-w-7xl',
               'overflow-hidden transition-[opacity,transform] duration-800',
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full',
@@ -34,7 +34,7 @@ export default function Hero() {
 
             <div
               className={[
-                'text-white mr-20',
+                'text-black mr-20',
                 'max-w-6xl',
                 'transition-[opacity,transform] duration-800 delay-100',
                 visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',

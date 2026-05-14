@@ -28,7 +28,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
       {/* .mobile-navi — full-screen slide-in panel */}
       <div
         className={[
-          "fixed inset-0 z-9999 bg-brand-navy",
+          "fixed inset-0 z-9999 bg-[#000000]",
           "transition-transform duration-800",
           isOpen ? "translate-x-0" : "-translate-x-full",
         ].join(" ")}
@@ -42,7 +42,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
           {/* .mobile-navi__close */}
           <button
             onClick={onClose}
-            className="absolute right-[24px] top-1/2 -translate-y-1/2 text-white bg-transparent border-0 cursor-pointer p-0"
+            className="absolute right-[24px] top-1/2 -translate-y-1/2 text-[#F8CB3E] bg-transparent border-0 cursor-pointer p-0"
             aria-label="Close menu"
           >
             <X size={30} strokeWidth={2.5} />
@@ -61,17 +61,17 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     /* has-child */
                     <button
                       onClick={() => setActiveSubNav(item.label)}
-                      className="inline-flex items-center gap-[1.2rem] bg-transparent border-0 text-white text-[1.8rem] font-medium cursor-pointer p-0"
+                      className="inline-flex items-center gap-[1.2rem] bg-transparent border-0 text-[#F8CB3E] text-[1.8rem] font-medium cursor-pointer p-0"
                     >
                       {item.label}
-                      <ChevronRight size={12} className="text-brand-orange" strokeWidth={2.5} />
+                      <ChevronRight size={12} className="text-[#D0011B]" strokeWidth={2.5} />
                     </button>
                   ) : (
                     <Link
                       href={item.href ?? '#'}
                       target={item.external ? '_blank' : undefined}
                       rel={item.external ? 'noopener' : undefined}
-                      className="text-white no-underline"
+                      className="text-[#F8CB3E] no-underline"
                       onClick={onClose}
                     >
                       {item.label}
@@ -92,7 +92,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
         {/* Sub-panel (.nav-dropdown on mobile) — slides in from left, covers full panel */}
         <div
           className={[
-            "fixed inset-0 z-99 bg-brand-navy",
+            "fixed inset-0 z-99 bg-[#000000]",
             "overflow-auto px-[13%] py-12 box-border",
             "transition-transform duration-800",
             activeSubNav ? "translate-x-0" : "-translate-x-full",
@@ -104,9 +104,9 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
               <div className="relative pb-[1.2rem] mb-8 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-screen after:-translate-x-1/2 after:border-b after:border-[rgba(161,197,211,.3)]">
                 <button
                   onClick={() => setActiveSubNav(null)}
-                  className="inline-flex items-center gap-[0.6rem] text-white text-[1.2rem] font-medium bg-transparent border-0 cursor-pointer p-0 pl-[1.2rem] relative"
+                  className="inline-flex items-center gap-[0.6rem] text-[#F8CB3E] text-[1.2rem] font-medium bg-transparent border-0 cursor-pointer p-0 pl-[1.2rem] relative"
                 >
-                  <ChevronLeft size={12} className="text-brand-orange absolute left-0 top-1/2 -translate-y-1/2" strokeWidth={2.5} />
+                  <ChevronLeft size={12} className="text-[#D0011B] absolute left-0 top-1/2 -translate-y-1/2" strokeWidth={2.5} />
                   Back
                 </button>
               </div>
@@ -116,11 +116,11 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 {/* nav-dropdown__title */}
                 <Link
                   href={activeItem.dropdown!.titleHref}
-                  className="inline-block align-top text-white text-[1.8rem] font-medium leading-[1.5] mb-[2rem] no-underline pr-[2rem] relative"
+                  className="inline-block align-top text-[#F8CB3E] text-[1.8rem] font-medium leading-[1.5] mb-[2rem] no-underline pr-[2rem] relative"
                   onClick={onClose}
                 >
                   {activeItem.dropdown!.title}
-                  <ChevronRight size={14} className="text-brand-orange absolute right-0 top-1/2 -translate-y-1/2" strokeWidth={2.5} />
+                  <ChevronRight size={14} className="text-[#D0011B] absolute right-0 top-1/2 -translate-y-1/2" strokeWidth={2.5} />
                 </Link>
 
                 {/* nav-dropdown__menu */}
@@ -131,7 +131,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                         href={link.href}
                         target={'external' in link && link.external ? '_blank' : undefined}
                         rel={'external' in link && link.external ? 'noopener' : undefined}
-                        className="text-white no-underline"
+                        className="text-[#F8CB3E] no-underline"
                         onClick={onClose}
                       >
                         {link.label}
@@ -144,7 +144,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
               {/* nav-dropdown__right — quick links */}
               {activeItem.dropdown!.quickLinks && (
                 <div className="pt-[2rem]">
-                  <div className="text-[1.4rem] font-medium mb-[1.8rem] uppercase tracking-[1px] text-brand-sky">
+                  <div className="text-[1.4rem] font-medium mb-[1.8rem] uppercase tracking-[1px] text-[#F8CB3E] opacity-70">
                     Quick Links
                   </div>
                   <ul className="m-0 p-0 list-none">

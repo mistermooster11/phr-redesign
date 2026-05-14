@@ -21,11 +21,11 @@ export default function CraftCatalogHero() {
                 <em>&gt;</em>
                 <span className="post post-page current-item">Our Services</span>
               </div>
-              <h1 className={`ia-white fadeInUpS wow${vis}`} style={{ animationDelay: "0.1s" }}>
+              <h1 className={`fadeInUpS wow${vis}`} style={{ animationDelay: "0.1s" }}>
                 Our Services
               </h1>
               <div
-                className={`content-entry ia-white fadeInUpS wow${vis}`}
+                className={`content-entry fadeInUpS wow${vis}`}
                 style={{ animationDelay: "0.2s" }}
               >
                 <p>

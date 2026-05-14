@@ -98,7 +98,7 @@ export default function Footer() {
             </div>
             <a
               href="tel:5166365300"
-              className={`ia-link ia-link--arrow ia-link--white wow${vis}`}
+              className={`ia-link ia-link--arrow wow${vis}`}
             >
               <i className="icon-arrow-right ia-orange" />
               <span>Call Nassau: (516) 636-5300</span>
@@ -120,7 +120,7 @@ export default function Footer() {
             </div>
             <a
               href="/service-areas"
-              className={`ia-link ia-link--arrow ia-link--white wow${vis}`}
+              className={`ia-link ia-link--arrow wow${vis}`}
             >
               <i className="icon-arrow-right ia-orange" />
               <span>View All Areas</span>

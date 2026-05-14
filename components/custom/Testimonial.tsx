@@ -68,7 +68,7 @@ function QuoteCard({
       }}
     >
       <div
-        className="content-entry ia-white"
+        className="content-entry"
         style={{
           fontSize: "1.8rem",
           lineHeight: 1.6,
@@ -79,13 +79,13 @@ function QuoteCard({
         <p>&ldquo;{item.quote}&rdquo;</p>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-        <strong className="ia-white" style={{ fontSize: "1.6rem" }}>
+        <strong style={{ fontSize: "1.6rem", color: "#000000" }}>
           {item.name}
         </strong>
-        <span className="ia-sky" style={{ fontSize: "1.4rem" }}>
+        <span style={{ fontSize: "1.4rem", color: "#000000" }}>
           {item.position}
         </span>
-        <span style={{ fontSize: "1.3rem", opacity: 0.7, color: "#fff" }}>
+        <span style={{ fontSize: "1.3rem", opacity: 0.7, color: "#000000" }}>
           {item.platform}
         </span>
       </div>
@@ -116,18 +116,18 @@ function ArrowBtn({
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
-        color: "#a1c5d3",
+        color: "#000000",
         flexShrink: 0,
         transition: "border-color 0.25s, color 0.25s",
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLButtonElement).style.borderColor = "#a1c5d3";
+        (e.currentTarget as HTMLButtonElement).style.borderColor = "#F8CB3E";
         (e.currentTarget as HTMLButtonElement).style.color = "#fff";
       }}
       onMouseLeave={(e) => {
         (e.currentTarget as HTMLButtonElement).style.borderColor =
           "rgba(161,197,211,0.35)";
-        (e.currentTarget as HTMLButtonElement).style.color = "#a1c5d3";
+        (e.currentTarget as HTMLButtonElement).style.color = "#000000";
       }}
     >
       {dir === "prev" ? (
@@ -171,11 +171,11 @@ export default function Testimonial() {
   return (
     <div ref={ref} className="front-testimonial ia-bg-dark">
       <div className="inner inner--slim-1172">
-        <div className={`sub-heading sub-heading__white fadeInUpS wow${vis}`}>
+        <div className={`sub-heading fadeInUpS wow${vis}`}>
           What Our Customers Say
         </div>
         <h2
-          className={`h3 ia-white fadeInUpS wow${vis}`}
+          className={`h3 fadeInUpS wow${vis}`}
           style={{ animationDelay: "0.1s" }}
         >
           Real Results. Real Neighbors.
@@ -235,7 +235,7 @@ export default function Testimonial() {
                   borderRadius: "50%",
                   border: "none",
                   cursor: "pointer",
-                  background: i === active ? "#a1c5d3" : "rgba(161,197,211,0.3)",
+                  background: i === active ? "#D0011B" : "rgba(0,0,0,0.2)",
                   transition: "background 0.3s",
                   padding: 0,
                 }}

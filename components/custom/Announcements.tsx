@@ -46,7 +46,7 @@ export default function Announcements() {
                   display: 'block',
                   width: '100%',
                   height: '100%',
-                  backgroundColor: '#101d2b',
+                  backgroundColor: '#000000',
                 }}
               />
               {/* [TODO: Replace with a Professional Home Remodeling project photo — kitchen, bathroom, or exterior] */}

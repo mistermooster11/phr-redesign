@@ -1,21 +1,20 @@
 import Link from 'next/link';
-import { ExternalLink } from 'lucide-react';
 
-const socialLinks = [
+const quickLinks = [
   {
-    label: 'Donate',
-    href: 'https://secure.givelively.org/donate/national-center-for-construction-education-research/build-america-change-lives',
-    filled: false,
-  },
-  {
-    label: 'Support',
-    href: 'https://tracker.pardot.nccer.org/l/961192/2024-03-22/5hfvt',
-    filled: false,
-  },
-  {
-    label: 'Sign In',
-    href: 'https://web.myaccount.nccer.org/',
+    label: 'Free Estimate',
+    href: '/contact-us',
     filled: true,
+  },
+  {
+    label: 'Our Work',
+    href: '/gallery',
+    filled: false,
+  },
+  {
+    label: 'Reviews',
+    href: '/general-faqs',
+    filled: false,
   },
 ];
 
@@ -33,7 +32,7 @@ export default function SocialLinks({ layout = 'row', onClick }: SocialLinksProp
         layout === 'row' ? 'flex items-center' : 'flex flex-col',
       ].join(' ')}
     >
-      {socialLinks.map((s, i) => (
+      {quickLinks.map((s, i) => (
         <li
           key={s.label}
           className={[
@@ -44,20 +43,17 @@ export default function SocialLinks({ layout = 'row', onClick }: SocialLinksProp
         >
           <Link
             href={s.href}
-            target="_blank"
-            rel="noopener"
             onClick={onClick}
             className={[
               'text-4xl! md:text-xl! inline-flex items-center gap-2',
               'text-[1.4rem] leading-[1.4] no-underline whitespace-nowrap',
-              'px-[1.2rem] py-[1rem] border border-white rounded-[2px]',
+              'px-[1.2rem] py-[1rem] border border-[#F8CB3E] rounded-[2px]',
               'transition-[background,color,border-color] duration-350',
-              'hover:bg-brand-sky hover:text-brand-navy hover:border-brand-sky',
-              s.filled ? 'bg-white text-brand-navy' : 'bg-transparent text-white',
+              'hover:bg-[#F8CB3E] hover:text-black hover:border-[#F8CB3E]',
+              s.filled ? 'bg-[#F8CB3E] text-black' : 'bg-transparent text-[#F8CB3E]',
             ].join(' ')}
           >
             {s.label}
-            <ExternalLink size={11} strokeWidth={2} />
           </Link>
         </li>
       ))}

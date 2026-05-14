@@ -18,7 +18,7 @@ export default function ProgramsHero({ data }: Props) {
           <div style={{ background: `url(${data.bgImage}) no-repeat center center / cover` }} />
         </div>
         <div className="inner inner--slim-1172">
-          <div className={`breadcrumbs ia-white fadeInUpS wow${vis}`}>
+          <div className={`breadcrumbs ia-dark fadeInUpS wow${vis}`}>
             <span><a href="/">Home</a></span>
             <em>&gt;</em>
             <span>
@@ -29,14 +29,14 @@ export default function ProgramsHero({ data }: Props) {
           </div>
 
           <h1
-            className={`h1 ia-white fadeInUpS wow${vis}`}
+            className={`h1 ia-dark fadeInUpS wow${vis}`}
             style={{ animationDelay: "0.3s" }}
           >
             {data.title}
           </h1>
 
           <div
-            className={`content-entry ia-white fadeInUpS wow${vis}`}
+            className={`content-entry ia-dark fadeInUpS wow${vis}`}
             style={{ animationDelay: "0.4s" }}
           >
             {data.description}
