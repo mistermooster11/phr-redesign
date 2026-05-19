@@ -43,12 +43,13 @@ export default function Footer() {
         <div className={`footer__logo fadeInUpS wow${vis}`}>
           <a href="/">
             <span className="sr-only">Professional Home Remodeling Inc.</span>
-            {/* [TODO: Replace with Professional Home Remodeling logo] */}
             <img
-              src="/logos/logo-long.svg"
+              src="https://www.phr-ny.com/images/professional_logo_WEB_copy3.jpg"
               alt="Professional Home Remodeling Inc."
               width="220"
-              height="48"
+              height="220"
+              className="object-contain"
+              style={{ maxHeight: "140px", width: "auto" }}
             />
           </a>
         </div>

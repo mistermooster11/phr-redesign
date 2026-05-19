@@ -37,7 +37,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
         {/* .mobile-navi__head */}
         <div className="relative px-[2.4rem] py-[1rem] flex items-center min-h-[54px] border-b border-[rgba(161,197,211,.3)]">
           <Link href="/" onClick={onClose} aria-label="Professional Home Remodeling Inc.">
-            <img src="/logos/logo-long.svg" alt="Professional Home Remodeling Inc. logo" className="block h-[3.2rem]" />
+            <img src="https://www.phr-ny.com/images/professional_logo_WEB_copy3.jpg" alt="Professional Home Remodeling Inc. logo" className="block h-[3.2rem] w-auto object-contain" />
           </Link>
           {/* .mobile-navi__close */}
           <button

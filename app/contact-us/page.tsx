@@ -122,10 +122,9 @@ export default function ContactPage() {
       {/* ── Hero ── */}
       <CraftHero
         title="Contact Us"
-        bgImage="/images/IMG_9688-1024x682.jpg"
+        bgImage="https://www.phr-ny.com/images/hempstead-office.png"
         breadcrumbs={[{ label: "Contact Us" }]}
       />
-      {/* [TODO: Replace bgImage with a PHR project photo] */}
 
       {/* ── Contact Form ─────────────────────────────────────────── */}
       <div ref={formRef} className={`content-block-flex flex-module fadeIn wow${formVis}`}>
@@ -267,6 +266,18 @@ export default function ContactPage() {
           >
             Find Us
           </h2>
+
+          {/* Office photo */}
+          <div className={`fadeInUpS wow${mapVis}`} style={{ animationDelay: "0.15s", marginBottom: "2rem" }}>
+            <img
+              src="https://www.phr-ny.com/images/hempstead-office.png"
+              alt="Professional Home Remodeling office — 1184 Hempstead Turnpike, Franklin Square, NY"
+              width={1326}
+              height={714}
+              style={{ width: "100%", height: "auto", borderRadius: "4px", display: "block", objectFit: "cover", maxHeight: "400px" }}
+            />
+          </div>
+
           <div className={`fadeInUpS wow${mapVis}`} style={{ animationDelay: "0.2s" }}>
             {/* Google Maps embed centered on 1184 Hempstead Turnpike, Franklin Square, NY 11010 */}
             <iframe

@@ -5,8 +5,7 @@ export const accordionItems = [
   {
     id: "accordion-0",
     title: "Kitchen Remodeling",
-    image: "/images/IMG_9688-1024x682.jpg",
-    // [TODO: Replace with a PHR kitchen project photo]
+    image: "https://www.phr-ny.com/images/kitchen_carousel_1.jpg",
     description:
       "Complete kitchen renovations from the studs up — custom cabinetry, granite or quartz countertops, tile backsplash, new flooring, sinks, faucets, and finish paint. We design around what you want your kitchen to look like.",
     learnHref: "/craft-catalog/kitchen-remodeling",
@@ -20,8 +19,7 @@ export const accordionItems = [
   {
     id: "accordion-1",
     title: "Bathroom Remodeling",
-    image: "/images/IMG_9750-1024x683.jpg",
-    // [TODO: Replace with a PHR bathroom project photo]
+    image: "https://www.phr-ny.com/images/bathroom_carousel_1.jpg",
     description:
       "Custom bathroom renovations built to your specifications. Full demolition to the studs, then rebuild with proper waterproofing, custom tile, and all-new fixtures — tubs, showers, toilets, vanities, and medicine cabinets.",
     learnHref: "/craft-catalog/bathroom-remodeling",
@@ -35,8 +33,7 @@ export const accordionItems = [
   {
     id: "accordion-2",
     title: "Roofing",
-    image: "/images/iStock-530983109-1.jpg",
-    // [TODO: Replace with a PHR roofing project photo]
+    image: "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
     description:
       "GAF Certified roof installations and repairs serving Queens, Brooklyn, Nassau, Suffolk, the Bronx, and Westchester. Free inspections. Emergency leak response available.",
     learnHref: "/craft-catalog/roofing",
@@ -50,8 +47,8 @@ export const accordionItems = [
   {
     id: "accordion-3",
     title: "Siding & Windows",
-    image: "/images/IMG_9688-1024x682.jpg",
-    // [TODO: Replace with a PHR siding or window project photo]
+    image: "https://www.phr-ny.com/images/siding_carousel_1.jpg",
+    energyStarLogo: "https://www.phr-ny.com/images/energy_star_lg_logo.png",
     description:
       "Insulated vinyl siding in 20+ colors with lifetime manufacturer guarantee, plus Energy Star-rated window replacement. Complete exterior packages including fascia, gutters, and aluminum window capping.",
     learnHref: "/craft-catalog/siding",

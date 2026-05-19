@@ -16,8 +16,7 @@ const phrny: ChannelPageData = {
     title:           "Home Remodeling Specialists",
     breadcrumbLabel: "About Us",
     imageBg:
-      "url(/images/IMG_9688-1024x682.jpg) no-repeat center center / cover",
-    // [TODO: Replace hero background with a PHR project photo — kitchen, siding, or exterior shot]
+      "url(https://www.phr-ny.com/images/kitchen_carousel_1.jpg) no-repeat center center / cover",
     description: (
       <p>
         Professional Home Remodeling Inc. is a family-run home improvement
@@ -121,8 +120,7 @@ const phrny: ChannelPageData = {
   },
 
   flexFeature: {
-    imageSrc:    "/images/iStock-1220765707-443x559-1.jpg",
-    // [TODO: Replace with a PHR emergency repair or storm damage photo]
+    imageSrc:    "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
     title:       "Emergency Repairs — We Respond Fast",
     body: (
       <p>

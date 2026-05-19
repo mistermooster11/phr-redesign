@@ -118,7 +118,7 @@ export default function Hero() {
                   className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto max-w-[200%]"
                 >
                   <source
-                    src="https://www.nccer.org/media/2023/03/Hero-Website-Video-3.mp4"
+                    src="https://videos.pexels.com/video-files/6473923/6473923-hd_1920_1080_25fps.mp4"
                     type="video/mp4"
                   />
                 </video>

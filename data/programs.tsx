@@ -38,8 +38,7 @@ export const programsData: ProgramsPageData = {
   ],
 
   hero: {
-    bgImage: "/images/IMG_9750-1024x683.jpg",
-    // [TODO: Replace with a PHR project photo]
+    bgImage: "https://www.phr-ny.com/images/siding_carousel_1.jpg",
     title: "Our Services",
     description: (
       <p>

@@ -13,8 +13,7 @@ const Topnav = ({ onMobileMenuClick }: TopnavProps) => {
 
                 {/* Mobile logo */}
                 <Link href="/" className="block lg:hidden float-left" aria-label="Professional Home Remodeling">
-                    {/* [TODO: Replace with Professional Home Remodeling logo SVG] */}
-                    <img src="/logos/logo-94.svg" alt="Professional Home Remodeling" className="block h-[3.6rem]" />
+                    <img src="https://www.phr-ny.com/images/professional_logo_WEB_copy3.jpg" alt="Professional Home Remodeling" className="block h-[4.8rem] w-auto object-contain" />
                 </Link>
 
                 {/* Phone number — centered on desktop */}

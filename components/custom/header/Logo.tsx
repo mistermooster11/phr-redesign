@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface LogoProps {
@@ -11,7 +12,7 @@ const Logo = ({ isFixed = false, isLoaded = false }: LogoProps) => {
     <div
       className={[
         "overflow-hidden transition-[width,height] duration-350 shrink-0",
-        isFixed ? "w-[150px] h-[38px]" : "w-[200px] h-[80px]",
+        isFixed ? "w-32 h-32" : "w-46 h-46",
       ].join(" ")}
     >
       <Link
@@ -22,10 +23,13 @@ const Logo = ({ isFixed = false, isLoaded = false }: LogoProps) => {
         ].join(" ")}
       >
         <span className="sr-only">Professional Home Remodeling Inc.</span>
-        <img
-          className="w-full"
-          src="/logos/logo-large.svg"
+        <Image
+          className="w-full h-full object-contain"
+          src="https://www.phr-ny.com/images/professional_logo_WEB_copy3.jpg"
           alt="Professional Home Remodeling Inc. logo"
+          width={200}
+          height={200}
+          priority
         />
       </Link>
     </div>

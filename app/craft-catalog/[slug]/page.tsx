@@ -5,8 +5,18 @@ import CraftOverview   from "@/components/custom/craft-catalog/CraftOverview";
 import RelatedCrafts   from "@/components/custom/craft-catalog/RelatedCrafts";
 import { servicePages } from "@/data/craft-catalog/service-pages";
 
-// TODO: Replace PLACEHOLDER_BG with a real service photo per slug
-const PLACEHOLDER_BG = "/images/IMG_9688-1024x682.jpg";
+// Map each service slug to the matching hero image from phr-ny.com
+const SERVICE_HERO_IMAGES: Record<string, string> = {
+  "kitchen-remodeling":      "https://www.phr-ny.com/images/kitchen_carousel_1.jpg",
+  "bathroom-remodeling":     "https://www.phr-ny.com/images/bathroom_carousel_1.jpg",
+  "roofing":                 "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
+  "siding":                  "https://www.phr-ny.com/images/siding_carousel_1.jpg",
+  "windows":                 "https://www.phr-ny.com/images/window_carousel_1.jpg",
+  "masonry":                 "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
+  "basement-waterproofing":  "https://www.phr-ny.com/images/bathroom_carousel_1.jpg",
+  "emergency-repairs":       "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
+};
+const FALLBACK_BG = "https://www.phr-ny.com/images/kitchen_carousel_1.jpg";
 
 /* Pre-render all known service slugs at build time */
 export function generateStaticParams() {
@@ -41,7 +51,7 @@ export default async function ServiceDetailPage({
     <main className="pt-76 max-[1150px]:pt-[6.2rem]">
       <CraftHero
         title={data.title}
-        bgImage={PLACEHOLDER_BG}
+        bgImage={SERVICE_HERO_IMAGES[slug] ?? FALLBACK_BG}
         breadcrumbs={[
           { label: "Services", href: "/craft-catalog" },
           { label: data.title },

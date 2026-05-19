@@ -11,9 +11,8 @@ const galleryItems = [
     label: "Kitchen Remodel — Nassau County",
     beforeAlt: "Kitchen before renovation",
     afterAlt:  "Fully renovated kitchen with custom cabinetry and granite countertops",
-    // [TODO: Replace with real PHR kitchen before/after photos]
-    before: "/images/IMG_9688-1024x682.jpg",
-    after:  "/images/IMG_9750-1024x683.jpg",
+    before: "https://www.phr-ny.com/images/kitchen_sm_1.jpg",
+    after:  "https://www.phr-ny.com/images/kitchen_carousel_1.jpg",
     category: "Kitchen",
   },
   {
@@ -21,9 +20,8 @@ const galleryItems = [
     label: "Bathroom Remodel — Queens",
     beforeAlt: "Bathroom before renovation",
     afterAlt:  "Renovated bathroom with custom tile and new fixtures",
-    // [TODO: Replace with real PHR bathroom before/after photos]
-    before: "/images/IMG_9750-1024x683.jpg",
-    after:  "/images/IMG_9688-1024x682.jpg",
+    before: "https://www.phr-ny.com/images/bathroom_sm_1.jpg",
+    after:  "https://www.phr-ny.com/images/bathroom_carousel_1.jpg",
     category: "Bathroom",
   },
   {
@@ -31,9 +29,8 @@ const galleryItems = [
     label: "Siding & Windows — Brooklyn",
     beforeAlt: "Home exterior before siding and window replacement",
     afterAlt:  "Home exterior after insulated vinyl siding and Energy Star window installation",
-    // [TODO: Replace with real PHR siding/windows before/after photos]
-    before: "/images/iStock-530983109-1.jpg",
-    after:  "/images/IMG_9688-1024x682.jpg",
+    before: "https://www.phr-ny.com/images/siding_sm_1.jpg",
+    after:  "https://www.phr-ny.com/images/siding_carousel_1.jpg",
     category: "Siding & Windows",
   },
   {
@@ -41,10 +38,18 @@ const galleryItems = [
     label: "Masonry — Nassau County",
     beforeAlt: "Driveway and walkway before masonry work",
     afterAlt:  "New Cambridge paving stone driveway and walkway",
-    // [TODO: Replace with real PHR masonry before/after photos]
-    before: "/images/IMG_9688-1024x682.jpg",
-    after:  "/images/iStock-530983109-1.jpg",
+    before: "https://www.phr-ny.com/images/masonry_sm_1.jpg",
+    after:  "https://www.phr-ny.com/images/masonry_carousel_1.jpg",
     category: "Masonry",
+  },
+  {
+    id: "gallery-5",
+    label: "Window Replacement — Queens",
+    beforeAlt: "Windows before replacement",
+    afterAlt:  "New Energy Star-rated windows installed with aluminum capping",
+    before: "https://www.phr-ny.com/images/window_sm_1.jpg",
+    after:  "https://www.phr-ny.com/images/window_carousel_1.jpg",
+    category: "Windows",
   },
 ];
 

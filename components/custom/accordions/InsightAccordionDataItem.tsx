@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import SecondaryButton from '@/components/custom/buttons/SecondaryButton';
 
 interface AccordionStep { label: string; body: string; }
@@ -9,6 +10,7 @@ interface InsightAccordionDataItemProps {
     id: string;
     title: string;
     image: string;
+    energyStarLogo?: string;
     learnHref: string;
     steps: AccordionStep[];
   };
@@ -63,6 +65,19 @@ const InsightAccordionDataItem: React.FC<InsightAccordionDataItemProps> = ({
         <div style={{ marginTop: '2rem' }}>
           <SecondaryButton label="Contact Now" href="/contact-us" />
         </div>
+
+        {item.energyStarLogo && (
+          <div style={{ marginTop: '1.5rem' }}>
+            <Image
+              src={item.energyStarLogo}
+              alt="ENERGY STAR® Certified Windows"
+              width={120}
+              height={120}
+              className="object-contain"
+              style={{ maxHeight: '72px', width: 'auto' }}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
